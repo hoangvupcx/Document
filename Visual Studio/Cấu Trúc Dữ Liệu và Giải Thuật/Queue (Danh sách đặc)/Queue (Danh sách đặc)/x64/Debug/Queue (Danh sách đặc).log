@@ -1,0 +1,3 @@
+﻿  Source.cpp
+Source.obj : error LNK2019: unresolved external symbol "void __cdecl init(void)" (?init@@YAXXZ) referenced in function main
+D:\IT02\Visual Studio\Cấu Trúc Dữ Liệu và Giải Thuật\Queue (Danh sách đặc)\x64\Debug\Queue (Danh sách đặc).exe : fatal error LNK1120: 1 unresolved externals

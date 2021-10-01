@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Questrial, sans-serif;
+}
+nav {
+    background-color: lightskyblue;
+    padding: 10px;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+}
+.menu li:first-child a {
+    padding: 15px 5px;
+}
+.menu li a:hover {
+    background-color: darkblue;
+    color: white;
+}
+.btn {
+    color: black;
+    display: block;
+    padding: 15px 20px;
+}
+.btn:hover {
+    opacity: 0.6;
+}
+.btn-group > .btn:first-child {
+    background-color: lightsalmon;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid red;
+}
+.btn-group > .btn:last-child {
+    background-color: lightgreen;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid green;
+}
+h1.subject {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+h1.subject::after {
+    content: "--o0o--";
+    display: block;
+    font-size: 1.5rem;
+}
+.course {
+    background-image: url(https://scontent.fsgn2-2.fna.fbcdn.net/v/t1.15752-9/243076178_260249659332855_5916315671607382612_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=p-wggyis2MsAX964Kn8&_nc_ht=scontent.fsgn2-2.fna&oh=7d104696ea8f81f1127e48aaca45ade7&oe=61774E47);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 30px;
+}
+.items {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+.items figure {
+    width: 25%;
+}
+figure img {
+    transition: transform 0.5s;
+}
+figure img:hover {
+    transform: rotate(20deg);
+}
+.news > div {
+    width: 50%;
+}
+.news img {
+    width: 100%;
+}
+.stats {
+    text-align: center;
+}
+.stats h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.stats i {
+    font-size: 4rem;
+}
+.fa-calendar {
+    color: rgb(13, 177, 13);
+}
+.fa-user {
+    color: rgb(73, 73, 165);
+}
+.fa-book {
+    color: brown;
+}
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+}
+.new-item {
+    position: relative;
+}
+.new-item::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: height 0.5s;
+}
+.new-item:hover::after {
+    height: 100%;
+}

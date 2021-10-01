@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, intial-scale=1.0"> <!--Khai báo cho media--> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="animate__animated animate__fadeInDown">
+        <ul class="menu">
+            <li><a href="#"><i class="fas fa-home"></i>Trang chủ</a></li>
+            <li class="sub">
+                <a href="#"><i class="fas fa-book"></i> Danh mục môn học</a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Thiết kế Web</a></li>
+                    <li><a href="#">Lập trình Java</a></li>
+                    <li><a href="#">Lập trình C++</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Diễn đàn</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://intphcm.com/data/upload/banner-la-gi.jpg" alt="Los Angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/99/34/2d/99342dbcfde06367ac624ac313e24ce7.png" alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="https://artcity.vn/wp-content/uploads/2021/02/Thiet-ke-banner-quang-cao-dien-thoai-3.jpg" alt="New York">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+    </section>
+    <section>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+        </button>
+        
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">MY WEBSITE</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">Welcome to my website!!!</div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="items">
+            <div class="item animate__animated animate__bounceInDown">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <picture> <!--Thay đổi hình nền dựa trên media bằng thuộc tính <picture>-->
+                        <source srcset="https://i.pinimg.com/474x/e0/53/35/e05335acd0629d26bd6bff323e7e4e2c.jpg" media="(max-width: 600px)">
+                        <img src="https://i.pinimg.com/originals/60/61/38/6061386d1b7920ecb8240787685523d5.png" alt="demo">
+                    </picture>
+                </div>
+                <div class="label">NEW</div>
+            </div>
+            <div class="item">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <img src="https://i.pinimg.com/originals/59/0d/68/590d68c3667bfa3500cefb095d59dfac.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <img src="https://i.pinimg.com/originals/60/61/38/6061386d1b7920ecb8240787685523d5.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <img src="https://i.pinimg.com/originals/60/61/38/6061386d1b7920ecb8240787685523d5.png " alt="">
+                </div>
+            </div>
+            <div class="item">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <img src="https://i.pinimg.com/originals/60/61/38/6061386d1b7920ecb8240787685523d5.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <h1>Thiết kế web</h1>
+                <div>
+                    <img src="https://i.pinimg.com/originals/60/61/38/6061386d1b7920ecb8240787685523d5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="langs">
+            <div class="lang">
+                <img src="http://www.trochoiviet.com/wp-content/uploads/2017/07/tro-choi-chung-toi-don-gian-la-gau-game.png" alt="">
+                <p>17h ngày 3/8, ông Trần Văn Đàn, 65 tuổi, dân phòng phường Mai Động, cùng ba tình nguyện viên bắt đầu vào ca trực tại chốt cụm dân số 10. Chốt đặt ở đầu ngõ 175 đường Tam Trinh với biển báo cỡ lớn màu xanh lá ghi "vùng xanh", lối vào căng sợi dây dù. Người lạ, khách không được vào, người dân bên trong chỉ được ra ngoài khi cần thiết hoặc có giấy đi đường. Hàng hóa đều giao nhận, phun khử khuẩn tại bàn sắt.</p>
+            </div>
+            <div class="lang">
+                <img src="http://www.trochoiviet.com/wp-content/uploads/2017/07/tro-choi-chung-toi-don-gian-la-gau-game.png" alt="">
+                <p>17h ngày 3/8, ông Trần Văn Đàn, 65 tuổi, dân phòng phường Mai Động, cùng ba tình nguyện viên bắt đầu vào ca trực tại chốt cụm dân số 10. Chốt đặt ở đầu ngõ 175 đường Tam Trinh với biển báo cỡ lớn màu xanh lá ghi "vùng xanh", lối vào căng sợi dây dù. Người lạ, khách không được vào, người dân bên trong chỉ được ra ngoài khi cần thiết hoặc có giấy đi đường. Hàng hóa đều giao nhận, phun khử khuẩn tại bàn sắt.</p>
+            </div>
+            <div class="lang">
+                <img src="http://www.trochoiviet.com/wp-content/uploads/2017/07/tro-choi-chung-toi-don-gian-la-gau-game.png" alt="">
+                <p>17h ngày 3/8, ông Trần Văn Đàn, 65 tuổi, dân phòng phường Mai Động, cùng ba tình nguyện viên bắt đầu vào ca trực tại chốt cụm dân số 10. Chốt đặt ở đầu ngõ 175 đường Tam Trinh với biển báo cỡ lớn màu xanh lá ghi "vùng xanh", lối vào căng sợi dây dù. Người lạ, khách không được vào, người dân bên trong chỉ được ra ngoài khi cần thiết hoặc có giấy đi đường. Hàng hóa đều giao nhận, phun khử khuẩn tại bàn sắt.</p>
+            </div>
+            <div class="lang">
+                <img src="http://www.trochoiviet.com/wp-content/uploads/2017/07/tro-choi-chung-toi-don-gian-la-gau-game.png" alt="">
+                <p>17h ngày 3/8, ông Trần Văn Đàn, 65 tuổi, dân phòng phường Mai Động, cùng ba tình nguyện viên bắt đầu vào ca trực tại chốt cụm dân số 10. Chốt đặt ở đầu ngõ 175 đường Tam Trinh với biển báo cỡ lớn màu xanh lá ghi "vùng xanh", lối vào căng sợi dây dù. Người lạ, khách không được vào, người dân bên trong chỉ được ra ngoài khi cần thiết hoặc có giấy đi đường. Hàng hóa đều giao nhận, phun khử khuẩn tại bàn sắt.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

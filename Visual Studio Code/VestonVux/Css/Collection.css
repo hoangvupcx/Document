@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Questrial, sans-serif;
+}
+.collection-items {
+    background-color: #f3f3f3;
+}
+.collection-items > .collection-item-1  img {
+    width: 100%;
+}
+.collection-item-1 {
+    position: relative;
+}
+div.text-item-1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 5%;
+    width: 100%;
+    padding: 0 10% 0;
+}
+.text-item-1 h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+.text-item-1 p {
+    font-size: 25px;
+}
+
+.collection-item-2 img {
+    width: 60%;
+}
+.collection-item-2 {
+    display: flex;
+    padding: 30px 0 0 0;
+}
+
+.text-item-2 {
+    text-align: center;
+    padding: 7%;
+}
+.text-item-2 h1 {
+    font-size: 35px;
+}
+.text-item-2 p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.collection-1, .collection-2 {
+    display: flex;
+}
+.collection-1 img, .collection-2 img {
+    width: 50%;
+}
+.collection-1 > div, .collection-2 > div  {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: auto 10%;
+}
+.collection-1 > div > div,  .collection-2 > div > div{
+    padding: 50% 15%;
+}
+.collection-1 > div h1, .collection-2 > div h1 {
+    letter-spacing: 5px;
+}
+.collection-1 > div p, .collection-2 > div p {
+    font-size: 20px;
+}
+.button-holiday input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid white;
+    transition: all 0.75s;
+    border-radius: 5px;
+    color: white;
+}
+.button-holiday input:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    transform: scale(1.1);
+}
+.show {
+    position: relative;
+}
+.show img {
+    width: 100%;
+}
+.caption-show-1st, .caption-show-2nd {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.caption-show-1st {
+    top: 30%;
+}
+.show h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: -4px;
+}
+.show h3 {
+    font-size: 40px;    
+}
+.caption-show-2nd {
+    top: 60%;
+}
+.spacer {
+    padding-top: 75px;
+}
+
+
+/*---------------Wedding---------------*/
+.banner-wedding {
+    position: relative;
+}
+.banner-wedding img {
+    width: 100%;
+}
+.caption-wedding, .text-wedding {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.caption-wedding {
+    top: 10%;
+    color: white;
+}
+.text-wedding {
+    top: 80%;
+    color: white;
+}
+.caption-wedding h1 {
+    font-size: 100px;
+    margin: -10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px black;
+}
+.caption-wedding h2 {
+    font-size: 60px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: -5px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h3 {
+    text-shadow: 1px 1px 1px white;
+}
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.title > h3 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+
+
+
+/*-----------------Holiday------------------*/
+.banner-holiday {
+    position: relative;
+}
+.banner-holiday img {
+    width: 100%;
+}
+.container-holiday {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 1px 1px 1px black;
+}
+.caption-holiday h2 {
+    font-size: 50px;
+}
+.text-holiday p {
+    font-size: 18px;
+}
+.title {
+    width: 80%;
+    margin:  auto ;
+}

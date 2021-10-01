@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box; /* Tính cả thành phần padding vào width -> Không cần tính toán */
+}
+div.items {
+    display: flex ;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+div.item {
+    width: 32%;
+    background-color: orange;
+    border: 2px solid lightgray;
+    padding: 5px; /* Thuộc tính box-sizing */
+    margin: 0.5%;
+    border-radius: 20px;
+    position: relative;
+}
+
+div.item > h1, ul.menu {
+    font-size: 3vw;
+}
+
+@keyframes doimau {
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: orange;
+    }
+    100% {
+        background-color: red;
+    }
+} 
+
+div.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 0 20px;
+    animation: doimau 1s infinite; /* Hiệu ứng đổi màu */
+}
+
+div.item img {
+    width: 100%; /* img nằm trọn vẹn bên trong cha */
+    transition: transform 1s; /* Hiệu ứng thực hiện trong 1s */
+}
+
+div.item img:hover {
+    transform: scale(1.2); /* zoom lớn hơn 1.2 lần */
+}
+
+div.item > div {
+    overflow: hidden; /* Zoom hình ko vượt ra khỏi cha */
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+nav > ul.menu {
+    display: flex;
+}
+
+ul.menu > li {
+    max-width: 200px;
+    border-right: 1px solid black;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.subcontent {
+    display: none;
+}
+
+.sub:hover .subcontent { 
+    display: block;
+    position: absolute;
+}
+
+div.lang  > img {
+    width: 200px;
+    float: left ;
+}
+
+div.lang {
+    overflow: auto;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: lightcoral;
+    }
+
+    div.item {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    div.item {
+        width: 99%;
+    }
+
+    nav > ul.menu {
+        flex-direction: column;
+    }
+
+    nav > ul.menu > :last-child {
+        margin-left: 0;
+    }
+
+    nav > ul.menu > li {
+        border-right: none;
+        max-width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) { /* Điều chỉnh theo chiều ngang màn hình */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: green;
+    }
+}
+

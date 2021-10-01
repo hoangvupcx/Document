@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="keyword" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Khuyến mãi </title>
+        <style>
+           ul.menu, .menu-menu {
+                text-indent: 5px;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                background-color: black;
+                overflow: hidden;
+                font-family: 'Roboto Slab', serif;
+            }
+            nav > ul.menu {
+                display: flex;
+            }
+            ul.menu > li, .menu-menu > li > a {
+                max-width: 200px;
+            }
+            ul.menu > li > a, .menu-menu > li > a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 15px;
+                letter-spacing: 0;
+                font-family: 'Roboto Slab', serif;
+            }
+            ul.menu > li > a:hover, .menu-menu > li > a:hover {
+                color: rgb(221, 29, 29);
+            }
+            .subcontent {
+                display: none;
+            }
+            .sub:hover .subcontent { 
+                display: block;
+                position: absolute;
+            }
+            li.first {
+                border-top: 2px solid rgb(221, 29, 29);
+            }
+            .menu-menu {
+                display: none;
+            }
+            .sub:hover .menu-menu {
+                display: block;
+                position: absolute;
+            }
+            ul.menu > li.right:last-child {
+                display: none; /* Ẩn nút menu */
+            }
+            /*Liên hệ*/
+            div.header {
+                height: 250px;
+                background-image: url(Images/Wallet.jpg);
+                background-size: cover; /* Tự động giãn so với kích thước */
+                background-attachment: fixed; /* Cố định hình */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            div.items{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            div.item{
+                width: 31%;
+                margin: 1%;
+                background-color: white;
+                position: relative;
+            }
+            div.lable{
+                position:absolute;
+                top: 0;
+                right: 0;
+                background-color: red;
+                color: yellow;
+                padding: 5px;
+            }
+            div.item img{
+                width: 100%;
+                transition: transform ease-in-out 1s;
+            }
+            div.item img:hover{
+                transform: scale(1.3);
+            }
+            div.im {
+                overflow: hidden;
+            }
+            p{
+                text-align: center;
+                font: bold 30px cambria;
+                color: red;
+            }
+            div.gia{
+                line-height: 5px;
+                text-align: center;
+                font-size: small;
+                padding: 1px;
+            }
+            h4.sale{
+                text-decoration: line-through;
+            }
+            @media screen and (max-width: 900px) {
+                div.item{
+                    width: 48%;
+                }
+            }
+            @media screen and (max-width: 600px){
+                div.item{
+                width: 98%;
+                }
+                nav > ul.menu{
+                flex-direction:column ;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--Navigation-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="Veston.html">HOME</a>
+                </li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">SALE OFF</a></li>
+                <li class="sub">
+                    <a href="#">SUITS<i class="fas fa-caret-down"></i></a>
+                    <ul class="menu subcontent">
+                        <li class="first"><a href="#">WEDDING VESTON</a></li>
+                        <li><a href="#">OFFICE VESTON</a></li>
+                        <li><a href="#">GILE</a></li>
+                    </ul>
+                </li>
+                <li class="right"><a href="Lienhe.html">CONTACT</a></li>
+                <li class="right"><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8">DIRECTION</a></li>
+                <li class="right"><a href="">ABOUT</a></li>
+                <li class="right sub">
+                    <a href=""><i class="fas fa-bars"></i> <i class="fas fa-caret-down"></i></a>
+                    <ul class="menu-menu">
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8">DIRECTION</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <p>Sản phẩm khuyến mãi</p>
+        <section>
+            <div class="items">
+                 <div class="item">
+                    <a href="#">    
+                        <div class="im">    
+                            <img src="images/12.jpg" alt="demo"/> 
+                        </div>  
+                        <div class="lable">-45%</div>                               
+                    </a>
+                    <div class="gia">
+                        <h2>Vest</h2>
+                        <h4>Gia </h4>
+                        <h4 class="sale">Gia </h4>
+                    </div>                  
+                 </div>
+            
+                 <div class="item">
+                    <a href="#">
+                        <div class="im"> 
+                            <img src="images/13.jpg" alt="demo"/>
+                        </div>       
+                        <div class="lable">-45%</div>
+                    </a> 
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia</h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>   
+                </div>
+                <div class="item">
+                    <a href="#">   
+                        <div class="im">
+                            <img src="images/14.jpg" alt="demo"/>
+                        </div>        
+                        <div class="lable">-40%</div>
+                    </a>  
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div> 
+                </div>
+                <div class="item">
+                    <a href="#">   
+                        <div class="im">
+                            <img src="images/15.jpg" alt="demo"/>
+                        </div>       
+                        <div class="lable">-37%</div>
+                    </a> 
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div> 
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="im">
+                            <img src="images/16.jpg" alt="demo"/>
+                        </div>     
+                        <div class="lable">-30%</div>
+                    </a> 
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>    
+                </div>
+                <div class="item">
+                    <a href="#">   
+                        <div class="im">
+                            <img src="images/17.jpg" alt="demo"/>
+                        </div>        
+                        <div class="lable">-30%</div>
+                    </a>
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>  
+                </div>
+                <div class="item">
+                    <a href="#">   
+                        <div class="im"> 
+                            <img src="images/18.jpg" alt="demo"/>
+                        </div>       
+                        <div class="lable">-28%</div>
+                    </a> 
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>   
+                </div>
+                <div class="item">
+                    <a href="#"> 
+                        <div class="im">
+                            <img src="images/19.jpg" alt="demo"/>
+                        </div>       
+                        <div class="lable">-27%</div>
+                    </a> 
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia </h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>  
+                </div>
+                <div class="item">
+                    <a href="#">   
+                        <div class="im">
+                            <img src="images/20.jpg" alt="demo"/>
+                        </div>     
+                        <div class="lable">-25%</div>
+                    </a>
+                        <div class="gia">
+                            <h2>Vest</h2>
+                            <h4>Gia</h4>
+                            <h4 class="sale">Gia </h4>
+                        </div>     
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        </div>
+        <div>	
+            <div>
+                <div>
+                    <h2>CONTACT US</h2>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="row item-footer">
+                <div>
+                    <hr class="hr-footer">
+                    <h5>NEED HELP?</h5>
+                    <hr class="hr-footer">
+                    <p>028.3920.7621</p>
+                    <p>info@vestonvux.com</p>
+                    <p>371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+                </div>
+                <div>
+                    <hr class="hr-footer">
+                    <h5>WORKING HOURS</h5>
+                    <hr class="hr-footer">
+                    <p>Monday-Friday: 8:00 - 20:00</p>
+                    <p>Weekend: 8:00 - 17:00</p>
+                </div>
+                <div>
+                    <hr class="hr-footer">
+                    <h5>BECOME A MEMBER</h5>
+                    <hr class="hr-footer">
+                    <p>Join now and get 10% off your second purchase, and free returns on all online purchases!</p>
+                </div>
+            </div>
+            <div class="copy">
+                <hr class="hr-end">
+                    <h5> Copyright &copy; VESTONVUX</h5>
+            </div>
+        </footer>
+    </body>
+</html>

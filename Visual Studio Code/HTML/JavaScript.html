@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
+    <title>JavaScript</title>
+    <script>
+        function giaiBac1() {
+    var a = document.getElementById("aId").value
+    var b = document.getElementById("bId").value
+
+    a = parseFloat(a) // Ép về kiểu số
+    b = parseFloat(b)
+
+        if (a == 0)
+        {
+            if (b == 0)
+                alert("Phương trình vô số nghiệm")
+            else
+                alert("Phương trình vô nghiệm")
+        }
+    else
+        alert("Nghiệm của phương trình la: x = " + (-b/a))
+    }
+
+    function doiMauNen(abc) { // Truyền 1 đối số bất kì vào để hứng (this) --> Gọn hơn
+       var color = abc.value //document.getElementById("colorName").value // Chỉ lấy được đối với những id trong thẻ <input>
+       var body = document.getElementById("bodyId")
+       body.style.backgroundColor = color
+    }
+
+    function init() { // Thường đặt trong thẻ <head> với id trong thẻ <body>
+        var c = document.getElementById("colorName")
+        c.style.border = "1px solid red"
+    }
+    </script>   
+    <style>
+        div.items {
+            display: flex;
+        }
+        div.item {
+            width: 50%; /* Chỉnh thằng cha, thằng con tự động điều chỉnh */
+            max-width: 50%;
+        }
+
+        div > img {
+            width: 100%;
+        }
+
+        div.thumb > div {
+            width: 20%;
+        }
+
+        div.thumb {
+            display: flex;
+        }
+
+        .button img{
+            width: 3%;
+        }
+
+        div.ball-area {
+            background-color: gray;
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+
+        #ball {
+            width: 80px;
+            position: absolute;
+        }
+    </style>
+    <script>
+        /* function changeImage(obj) { Thêm thuộc tính onclick="changeImage(this)" vào thẻ img trong div
+            var path = obj.src
+            var img = document.getElementById("mainImg")
+            img.src = path
+        } */
+
+        function init() {
+            var images = document.querySelectorAll("div.thumb img")
+            for (var i = 0; i < images.length; i++)
+                {
+                    images[i].onclick = function() 
+                    {
+                        var path = this.src
+                        var img = document.getElementById("mainImg")
+                        img.setAttribute("src", path)
+                    }
+                }
+            var buttons = document.querySelectorAll(".button a")
+
+            for (var i = 0; i < buttons.length; i++)
+                {
+                    buttons[i].onclick = function()
+                    {
+                        event.preventDefault()
+                        var color = this.getAttribute("rel") // this.rel
+                        var img = document.getElementById("mainImg")
+                        img.src = `images/Iphone12_${color}.jpg`
+
+                        var subImages = document.querySelectorAll(".thumb img")
+                        for (var i = 0; i < subImages.length; i++)
+                            {
+                            subImages[i].src = `images/${color}_${i+1}.jpg`
+                            }
+                    }
+                }  
+
+            setInterval(function() { // Tạo đồng hồ điện tử
+                var clock = document.getElementById("clock")
+                var day = new Date()
+                clock.innerText = `${day.getHours()}:${day.getMinutes()}:${day.getSeconds()}`
+            }, 1000)  
+        }
+
+        function changeSubject (obj) {
+            var subject = document.getElementById("subject")
+            subject.innerHTML = obj.value // Thay đổi nội dung của class="subject"
+        }
+
+        var timer = null
+        var L = 0, T = 0, incX = 5, incY = 5
+        function play() {
+            var ball = document.getElementById("ball")
+            var area = document.getElementsByClassName("ball-area")[0] // [0]: Lấy phần tử đầu tiên có class="ball-area"
+            timer = setInterval(function() {
+                if (T < 0 || T + ball.offsetHeight >= area.offsetHeight)
+                    incY = -incY;
+                if (L < 0 || L + ball.offsetWidth >= area.offsetWidth)
+                    incX = -incX;
+                L += incX
+                T += incY
+                ball.style.top = T + "px" 
+                ball.style.left = L + "px"
+            },10)
+        }
+
+        function stop() {
+            clearInterval(timer)
+        }
+    </script>
+</head>
+<body id="bodyId" onload="init()">
+    <div>
+        <h1 id="clock">00:00:00</h1> <!--Tạo đồng hồ điện tử-->
+    </div>
+    <div>
+        <input type="button" value="Play" onclick="play()" />
+        <input type="button" value="Stop" onclick="stop()" />
+        <div class="ball-area">
+            <img id="ball" src="https://s.hdnux.com/photos/35/71/32/7837332/3/rawImage.jpg" alt="ball">
+        </div>
+    </div>
+    <h1>JAVASCRIPT</h1>
+    <div class="items">
+        <div class="item">
+            <img src="images/Iphone12_Purple.jpg" id="mainImg" alt="phone">
+            <div class="thumb">
+                 <!--Thêm thuộc tính onclick="changeImage(this)" để chạy function changeImg()-->
+                <div><img src="images/Purple_1.jpg" alt="1"></div>
+                <div><img src="images/Purple_2.jpg" alt="2"></div>
+                <div><img src="images/Purple_3.jpg" alt="3"></div>
+                <div><img src="images/Purple_4.jpg" alt="4"></div>
+            </div>
+        </div>
+        <div class="item">
+            <h1 id="subject">ĐIỆN THOẠI IPHONE 12</h1>
+            <input type="text" 
+                onchange="changeSubject(this)"
+                placeholder="Enter phone name...">
+            <p></p>
+            <div class="button">
+                <a href="#" rel="Red">
+                    <img src="images/Red Button.jpg"/>
+                </a>
+                <a href="#" rel="Black">
+                    <img src="images/Black Button.jpg"/>
+                </a>
+                <a href="#" rel="Purple">
+                    <img src="images/Purple Button.jpg"/>
+                </a>
+                <a href="#" rel="Green">
+                    <img src="images/Mint Button.jpg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="colorName" onchange="doiMauNen(this)" placeholder="Nhập màu và nhấn Enter">
+                                      <!-- Truyền đối số this để hứng toàn bộ thẻ-->
+    <h1>ax + b = 0</h1>
+    <input type="text" id="aId" placeholder="Nhập a =">
+    <input type="text" id="bId" placeholder="Nhập b =">
+    <input type="button" value="Giải phương trình" onclick="giaiBac1()">
+</body>
+</html>

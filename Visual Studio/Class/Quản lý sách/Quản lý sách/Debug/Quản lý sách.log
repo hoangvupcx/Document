@@ -1,0 +1,2 @@
+﻿  Quản lý sách.cpp
+d:\it02\visual studio\class\quản lý sách\quản lý sách\quản lý sách.cpp(59): error C4703: potentially uninitialized local pointer variable 'dss' used

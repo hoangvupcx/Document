@@ -1,0 +1,1801 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Mallanna&display=swap');
+/*------------------------------------------------------Home-------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family: Questrial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/*------------------------------logo----------------------------*/
+.vestonvux {
+    background-color: black !important;
+    text-align: center !important;
+    position: relative;
+}
+.vestonvux img {
+    width: 20%;
+    margin: 10px 0;
+    float: none;
+    transition: all 1s;
+}
+.vestonvux img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/*------------------------------Menu----------------------------*/
+.menu {
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.menu> li {
+    margin: 0 auto;
+    justify-content: center;
+}
+.menu > li > a {
+    color: rgb(213, 213, 213);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 1s;
+}
+ul.menu > li > a:hover {
+    color: rgb(221, 29, 29);
+    transform: scale(1.2);
+}
+#toggle {
+    display: none;
+    color: white;
+    background-color: black;
+    text-align: right;
+    padding: 10px 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*---------------Header Top Bar-------------------*/
+.header-topbar {
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+.header-topbar > li:first-child{
+    margin-right: auto;
+}
+.header-topbar > li > a {
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 1s; 
+}
+ul.header-topbar > li > a:hover, .fa-search:hover, .fa-shopping-bag:hover {
+    color: rgb(221, 29, 29);
+    transform: scale(1.2) !important;
+}
+.fa-search, .fa-shopping-bag {
+    color: rgb(213, 213, 213);
+    cursor: pointer;
+    transition: all 1s; 
+}
+.login-register {
+    background-color: black;
+    text-align: center;
+    display: none;
+    padding: 5%;
+}
+.login-register input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 30px 20px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid white;
+    transition: all 0.75s;
+    border-radius: 5px;
+    color: white;
+}
+.login-register input:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*----------------------------------Search Box-----------------------------*/
+.search {
+    position: relative;
+    border: none;
+    border-bottom: 2px solid rgb(170, 168, 168);
+    width: max-content;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+.search-box {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    display: none;
+}
+.search-box input {
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0px;
+    font-size: 25px;
+    margin-bottom: 0;
+    width: 400px;
+    outline: none;
+    position: relative;
+}
+.search-box input::placeholder {
+    color: white;
+}
+.search:hover {
+    border-bottom: 3px solid rgb(221, 29, 29) !important;
+}
+.search-icon {
+    font-size: 25px;
+}
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear::before {
+    position: absolute;
+    content: ' ';
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.clear::after {
+    position: absolute;
+    content: ' ';
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    transform: rotate(315deg);
+}
+.modal-body {
+    text-align: center;
+}
+.btn-secondary:hover {
+    border-color: black !important;
+}
+/*----------------------End Search Box-----------------------------*/
+
+
+/*---------------------------demo1--------------------------*/
+.start-demo1 h4, .start-demo2 h4 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.start-demo1 > a, .start-demo2 > a{
+    color: #000;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    font-size: 1.25rem;
+    transition: all 0.5s;
+}
+.start-demo1 > a:hover, .start-demo2 > a:hover {
+    color: #6e6b6b;
+    text-decoration: underline;
+}
+.open-demo1, .end-demo1{
+    background-color: #f3f3f3;
+    font-family: Questrial, sans-serif;
+    margin-top: 5px;
+}
+.end-demo1 img, .end-demo2 img {
+    width: 50%;
+} 
+.start-demo1 {
+    float: left;
+    margin: 2.5% 10% 0 10%;
+    width: 30%;
+    clear: both; /*clear cho demo 3 và 4*/
+}
+.carousel-inner p {
+    margin: 5px 0;
+    text-align: center;
+}
+.carousel-inner a {
+    color: #000;
+}
+
+
+
+/*-----------------------------demo2------------------------------*/
+.start-demo2 {
+    float: right;
+    margin: 2.5% 10% 0 10%;
+    width: 30%;
+}
+
+
+
+
+
+/*-----------------------------demo3-------------------------------*/
+.slider {
+    background-color: #f3f3f3;
+    padding: 12px;
+    width: 100%;
+    height: 800px;
+}
+.banner img{
+    width: 100%;
+    padding-top: 5px;
+}
+.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+.item{
+    width: 24%;
+}
+.item img {
+    width: 100%;
+}
+.item-text {
+    padding-top: 10px;
+}
+.item-text p, .item-text pre {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.demo3 {
+    padding: 60px 0 0 ;
+    margin-bottom: 0;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+}
+.button-demo3  {
+    clear: left;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #000;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    font-family: Questrial, sans-serif;
+    transition: all 0.5s;
+}
+.button-demo3:hover {
+    color: #6e6b6b;
+}
+
+
+
+
+
+
+/*---------------------------------Collection--------------------------*/
+.collection-banner {
+    position: relative;
+}
+.collection-banner img{
+    width: 100%;
+}
+.content-collection {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 60%;
+    letter-spacing: 5px;
+}
+.content-collection h4 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.content-collection a {
+    font-size: 30px;
+    line-height: 25px;
+    color: black;
+}
+.content-collection a:hover {
+    color: #727070;
+}
+.holiday-wedding input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid black;
+    transition: all 0.75s;
+    border-radius: 5px;
+}
+.holiday-wedding input:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.carousel-control-prev ,
+.carousel-control-next {
+    color: black !important;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    border-radius: 50%;
+    opacity: 0 !important;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+.start-demo1:hover .carousel-control-prev,
+.start-demo1:hover .carousel-control-next, 
+.start-demo2:hover .carousel-control-prev,
+.start-demo2:hover .carousel-control-next,
+.slide:hover .carousel-control-prev,
+.slide:hover .carousel-control-next, 
+.slide:hover button.add-to-bag {
+    opacity: 1 !important;
+    transition: 0.25s ease-in;
+}
+/*-----------------------------------------------------------End Home-------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------------------Add to bag-------------------------------------------------------*/
+.product-1 {
+    position: relative;
+}
+.add-to-bag {
+    position: absolute;
+    text-align: center !important;
+    width: 95%;
+    height: 40px;
+    margin: 0 2.5%;
+    bottom: 1.25%;
+    background-color: white;
+    border: none;
+    font-family: 'Questrial', sans-serif; 
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+/*--------------------------------------------------------------Contact-------------------------------------------------------*/
+div.header {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover; /* Tự động giãn so với kích thước */
+    background-attachment: fixed; /* Cố định hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.header > p {
+    font-family: Questrial, sans-serif;
+    font-size: 75px;
+    background-color: transparent; /* Nền trong suốt*/
+    color: white;
+    text-shadow: 5px 5px 15px #000;
+    font-weight: lighter; /* Chữ mỏng*/
+}
+div.lienhe > p:first-child {
+    font-family: Questrial, sans-serif;
+    font-size: 2.625rem;
+    letter-spacing: 0.25rem;
+    padding-top: 13px;
+    padding-left: 100px;
+    letter-spacing: 0.5px;
+}
+div.lienhe > p:not(:first-child), p > iframe { /* Lấy tất cả thẻ p trong class="lienhe" trừ đứa đầu */
+    width: 51%;
+    padding-right: 5%;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    padding-left: 150px; /* Canh lề trái */
+    line-height: 20px; /* Khoảng cách giữa các dòng */
+    float: left;
+    font-family: 'Mallanna', sans-serif;
+    display: inline-block;
+}
+p > iframe {
+    height: 450px;
+}
+.responds div.form-caption > input.form-text-caption.form-text-caption {
+    font-family: Questrial, sans-serif;
+    font-size: 0.91rem;
+    border: 1px solid #181818;
+    height: 45px;
+    width: 30%;
+    margin-left: 5%;
+}
+textarea {
+    font-family: Questrial, sans-serif;
+    font-size: 0.91rem;
+    border: 1px solid #181818;
+    width: 40%;
+}
+input.button {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+    border-color: black;
+    font-weight: bold;
+    width: 30%;
+    height: 45px;
+    margin-left: 5%;
+    transition: all 0.5s;
+}
+input.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black ;
+}
+.responds .form-caption {
+    display: block;
+    margin-bottom: 25px;
+}
+.responds .form-caption span {
+    display: block;
+}
+.responds .form-caption.invalid .form-note {
+    padding-top: 2px;
+    color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+.form-text-caption {
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 12px;
+    border: none !important;
+    border-bottom: 2px solid rgb(170, 168, 168) !important;
+    outline: none;
+    font-family: Questrial, sans-serif;
+    border-radius: 0 0 0 7px;
+    transition: all 0.5s;
+}
+
+.form-text-caption:hover {
+    border-bottom: 2px solid black !important;
+}
+
+.responds .form-caption.invalid .form-text-caption {
+    border-color: #f33a58 !important;
+    font-family: Questrial, sans-serif;
+}
+/*-----------------------------------------------------------End Contact---------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------Button Go-to-top----------------------------------------------*/
+.gotop {
+    display: flex;
+    position: fixed;
+    bottom: 35px;
+    right: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    line-height: 40px;
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    visibility: hidden;
+    z-index: 99;
+    transition: all 0.75s;
+}
+.gotop:hover {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+.hien-ra {
+    visibility: visible;
+    opacity: 1;
+}
+/*---------------------------------------------------------Button Go-to-top-------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------------------Carousel-------------------------------------------------------*/
+.carousel-inner img {
+    width: 100%;
+    align-content: center;
+}
+.carousel-caption .btn {
+    font-family: 'Questrial', sans-serif; 
+    font-size: 25px;
+    background-color: white;
+    color: #000;
+    opacity: 0.7;
+    transition: 0.75s;
+}
+.carousel-caption .btn:hover {
+    background-color: #000;
+    color: white;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.carousel-caption h3.demo {
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    text-shadow: 10px 10px 10px #000;
+    letter-spacing: 0.1rem;
+}
+
+.carousel-caption h1 {
+    font-family: Questrial, sans-serif;
+    text-shadow: 10px 10px 15px #000;
+    width: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+}
+
+.btn-secondary {
+    background-color: black;
+}
+.btn-secondary:hover {
+    background-color: white;
+    border-color: white;
+    color:  black;
+}
+
+.hr-header {
+    border-top: 1px solid #0e0d0d;
+	width: 75%;
+    clear: left;
+    margin: revert;
+}
+/*--------------------------------------------------------------End Carousel-----------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------NEWLETTER----------------------------------------------*/
+.newletter {
+    text-align: center !important;
+    clear: left;
+}
+.text-newletter {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-top: 4.25rem;
+    font-size: 26px;
+    font-weight: 500;
+}
+.content-newletter {
+    font-weight: 490;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+}
+.inputEmail {
+    height: 3rem;
+    border: none;
+    border-bottom: 2px solid rgb(170, 168, 168);
+    border-radius: 0px;
+    font-size: 1rem;
+    width: 400px;
+    text-align: center; 
+    outline: none;
+    transition: all 0.5s;
+}
+.inputEmail:hover {
+    border-bottom: 3px solid black !important;
+}
+.submit {
+    height: 45px;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: #f3f3f3;
+    background-color: black;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+}
+.submit:hover {
+    color: black;
+    background-color: #f3f3f3;
+    border: 2px solid black ;
+}
+div.form-content {
+    display: block;
+    margin-bottom: 0px;
+}
+div.form-content span {
+    display: block;
+    text-align: center;
+}
+.form-content.invalid .form-erro {
+    padding-top: 2px;
+    color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+.form-content.invalid .inputEmail {
+    border-color: #f33a58;
+}
+/*------------------------------------------------------End NEWLETTER-------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------Footer------------------------------------------------ */
+.footer {
+    background-color: #181818;
+	color: #d5d5d5;
+    font-family: Questrial, sans-serif;
+    font-size: 26px;
+    clear: left;
+    width: 100vw;
+}
+div > h2 {
+    font-family: Questrial, sans-serif;
+}
+.text-footer {
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    clear: left;
+}
+.copy {
+    text-align: center !important;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.hr-end {
+    border-top: 1px solid #d5d5d5;
+	width: 90%;
+    margin: revert;
+}
+.text-footer, .social {
+    text-align: center !important; /* Canh giữa*/
+}
+div.social {
+    margin-bottom: 1rem;
+}
+.hr-footer {
+    border-top: 1px solid #d5d5d5;
+	width: 75%;
+    text-align: center !important;
+    margin: revert;
+}
+div.item-footer > div {
+    width: 33%;
+    display: inline-block;
+    text-align: center !important;
+    top: 0;
+} 
+div.item-footer p {
+    padding: 0 20px;
+}
+.social > a {
+    clear: left;
+	font-size: 3em;/*1em = 16px*/
+	padding: 0 3rem 3rem 3rem;/*1rem = 1 "font-size" */
+}
+.social a i {
+    transition: all 0.75s;
+
+}
+.social a i:hover {
+    transform: scale(1.3) !important;
+}
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter {
+	color: #00aced;	
+}
+.fa-google-plus-g {
+	color: #dd4b39;
+}
+.fa-instagram {
+	background: -webkit-linear-gradient(45deg, yellow, orange, red, rgb(177, 46, 133), rgb(109, 16, 109));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+/*----------------------------------------------------------End Footer--------------------------------------------------- */
+
+
+
+
+
+
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+
+
+/*------------------------------------------------------MEDIA QUERY---------------------------------------------------------*/
+@media screen and (max-width: 1050px) /*150%*/ {
+    .vestonvux img {
+        width: 30%;
+    }
+    /*--------------Header top bar---------------*/
+    .header-topbar {
+        height: 40px !important;
+    }
+    .header-topbar > li > a {
+        font-size: 15px !important;
+        padding: 10px 20px !important;
+    }
+
+    /*-----------------Search box---------------*/
+    .search-box input {
+        font-size: 20px;
+        width: 300px;
+    }
+    .search-icon {
+        font-size: 20px;
+    }
+
+
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .inputEmail {
+        height: 2.5rem;
+    }
+    .form-content span {
+        font-size: 15px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 250px;
+    }
+    div.header > p {
+        font-size: 60px;
+    }
+    div.lienhe > p:first-child {
+        padding-left: 40px;
+        margin-bottom: 0;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 15px;
+        padding-left: 30px;
+        margin-bottom: 7px;
+    }
+    p > iframe {
+        height: 400px;
+    }
+    input.button {
+        font-size: 10px;
+        height: 30px;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        font-size: 15px;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        height: 35px;
+    }
+    .responds div {
+        margin: 15px !important;
+    }
+    
+    .responds div.form-caption.invalid .form-note {
+        font-size: 15px;
+    }
+
+    /*-------------------End Contact-----------------*/
+
+
+
+
+
+    /*-------------------Home & Products-----------------*/
+    ul.menu {
+        height: 55px;
+    }
+    ul.menu > li > a {
+        font-size: 20px;
+    }
+    .slider {
+        height: 450px;
+    }
+    .carousel-caption h1{
+		font-size: 2.25rem;
+	}
+	.carousel-caption h3.demo{		
+		font-size: 15px;		
+	}
+	.carousel-caption .btn{		
+		font-size: 15px;		
+	}
+    div.header-product {
+        height: 250px;
+    }
+    .new > h3 {
+        font-size: 30px !important;
+    }
+    .new > p, div.text-product p, p.collection, .title > p {
+        font-size: 60%;
+    }
+    .add-to-bag {
+        font-size: 70%;
+        height: 32px;
+    }
+    .new > p {
+        margin-bottom: 10px;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    .menu-product > li > a, pre, .menu-collection > li > a {
+        font-size: 70%;
+        padding: 8px;
+    }
+    div.text-product pre {
+        font-size: 60%;
+    }
+    ul.menu-product, .menu-collection {
+        padding-left: 20px;
+    }
+    div.header-product > p {
+        font-size:  50px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 2px;
+        bottom: 10px;
+    }
+    dl, ol, ul {
+        margin-bottom: 5px;
+    }
+    .carousel-inner p, .item-text pre {
+        font-size: 0.75rem;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    .content-collection h4 {
+        font-size: 30px;
+    }
+    .content-collection a {
+        font-size: 20px;
+    }
+    .holiday-wedding input, .login-register input {
+        padding: 8px !important;
+        width: 140px;
+        font-size: 16px;
+    }
+    .title > h3 {
+        font-size: 30px !important;
+    }
+    /*------------------- End Home & Products-----------------*/
+
+    /*-------------------Footer-----------------*/
+
+    .end p {
+        font-size: 75%;
+    }
+    .end hr {
+        width: 20%;
+    }
+    div.item-footer > div {
+        font-size: 60%;
+    }
+    .title-footer {
+        font-size: 1rem;
+    }
+    .social > a  {
+        font-size: 2rem;
+    }
+    .hr-footer {
+        width: 70%;
+        margin: revert;
+    }
+    /*-------------------End Footer-----------------*/
+    .gotop {
+        font-size: 10px;
+        width: 25px;
+        height: 20px;
+        align-items: center;
+        bottom: 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 900px) /*175%*/ {
+    ul.menu {
+        height: 50px;
+    }
+    input.button {
+        width:  300px !important;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        width: 300px !important;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+   /*-----------------Search box---------------*/
+   .search-box input {
+        font-size: 15px;
+        width: 250px;
+        height: 1.5rem;
+    }
+    .search-icon {
+        font-size: 15px;
+    }
+
+
+
+
+
+    ul.menu > li > a {
+        font-size: 25px !important;
+        padding: 10px;
+    }
+    ul.menu {
+        height: 40px;
+    }
+    .slider {
+        height: 400px;
+    }
+    .content-newletter {
+        font-size: 12px;
+    }
+    input.button {
+        width: 280px !important;
+        border: 1.5px solid black !important;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        width: 280px !important;
+    }
+    .form-text-caption {
+        border-bottom: 1.5px solid rgb(170, 168, 168);
+    }
+    .form-text-caption:hover {
+        border-bottom: 1.5px solid black !important;
+    }
+    .content-collection h4 {
+        font-size: 25px;
+    }
+    .content-collection a {
+        font-size: 18px;
+    }
+    .holiday-wedding input {
+        padding: 10px !important;
+    }
+    .login-register input {
+        padding: 5px;
+        width: 130px !important;
+    }
+    .menu-collection {
+        font-size: 16px !important;   
+    }
+    .title > p {
+        font-size: 12px;
+    }
+    nav > ul.menu{
+        flex-direction: column ;
+        text-align: center;
+        background-color: black;
+        height: 100%;
+        padding: 5px;
+        display: none;
+    }
+    #toggle {
+        display: block;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar {
+        height: 20px !important;
+    }
+    .header-topbar > li > a {
+        font-size: 12px !important;
+        padding: 8px 15px !important;
+    }
+
+
+
+
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+       width: 250px;
+        font-size: 12px;
+        height: 2rem;
+    }
+    .social {
+        margin-bottom: 0.5rem !important;
+    }
+    .submit:hover {
+        border: 1px solid black;
+    }
+    .submit {
+        margin: 0;
+    }
+    .text-newletter{
+        font-size: 17px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        
+    }
+    .content-newletter {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    .form-content span {
+        font-size: 11px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 200px;
+    }
+    div.header > p {
+        font-size: 30px;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 10px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        line-height: 10px;
+    }
+    p > iframe {
+        height: 350px;
+    }
+    input.button {
+        font-size: 10px;
+        width:  250px !important;
+        height: 30px;
+        margin-left: 0 !important;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        font-size: 12px;
+        width: 250px !important;
+        border: 1px solid black;
+        margin-left: 0 !important;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        height: 30px;
+    }
+    .responds div.form-caption.invalid .form-note {
+        font-size: 12px;
+    }
+/*-------------------End Contact-----------------*/
+
+
+
+
+
+/*-------------------Home & Products------------------------*/
+    ul.menu > li > a {
+        font-size: 20px !important;
+    }
+    ul.menu {
+        height: 30px;
+    }
+    .slider {
+        height: 300px;
+    }
+    .carousel-caption h1{
+		font-size: 1.85rem;
+	}
+	.carousel-caption h3.demo, .carousel-caption .btn{		
+		font-size: 10px;		
+	}
+	.carousel-caption .btn{		
+		font-size: 10px;		
+	}
+    div.header-product {
+        height: 150px;
+    }
+    .new > h3, .title > h3 {
+        font-size: 25px !important;
+    }
+    title > p {
+        font-size: 10px !important;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    ul.menu-product {
+        padding-left: 10px;
+    }
+    div.header-product > p {
+        font-size:  30px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 60%;
+        width: 25px;
+        height: 25px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 1px;
+        bottom: 5px;
+    }
+    dl, ol, ul {
+        margin-bottom: 5px;
+    }
+    .carousel-inner p, .item-text pre {
+        font-size: 12px;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 15px;
+        margin: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+    .content-collection {
+        top: 30%;
+    }
+    .content-collection h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .content-collection a {
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 10px;
+    }
+    .holiday-wedding input {
+        padding: 4px;
+        width: 100px;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 1px solid black;
+    }
+    .login-register input {
+        padding: 4px;
+        width: 150px;
+        font-size: 12px;
+        margin: 10px;
+        border: 1px solid white;
+    }
+    /*-------------------End Home & Products------------------------*/
+
+
+
+    
+    /*-------------------Footer------------------------*/
+    .end p {
+        font-size: 50%;
+        padding-top: 40px;
+    }
+    .end hr {
+        width: 20%;
+        border-top: 1px solid black;
+    }
+    .text-footer {
+        font-size: 18px;
+    }
+    div.item-footer > div {
+        font-size: 50%;
+    }
+    div.item-footer  p {
+        margin-bottom: 7px;
+    }
+    .title-footer {
+        font-size: 0.75rem;
+    }
+    .social > a  {
+        font-size: 1.5rem;
+        padding: 1.4rem;
+    }
+    .hr-footer {
+        width: 70%;
+        margin: revert;
+    }
+    /*-------------------End Footer------------------------*/
+
+    .gotop {
+        font-size: 15px;
+        width: 40px;
+        border-radius: 45%;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    /*-----------------Search box---------------*/
+   .search-box input {
+        font-size: 12px !important;
+        width: 180px !important;
+    }
+    .search-icon {
+        font-size: 12px;
+    }
+
+
+
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 200px;
+        font-size: 10px;
+        height: 1.5rem;
+    }
+    .submit:hover {
+        border: 1px solid black;
+    }
+    .text-newletter{
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .content-newletter {
+        font-size: 8px;
+    }
+    .form-content span {
+        font-size: 9px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header > p {
+        font-size: 30px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 10px;
+        padding-left: 10px;
+        margin-bottom: 3px;
+    }
+    p > iframe {
+        height: 250px;
+        margin-bottom: 10% !important;
+    }
+    input.button {
+        font-size: 8px;
+        width: 230px !important;
+        height: 20px;
+    }
+    .responds div.form-caption > input.form-text-caption {
+        font-size: 8px !important;
+        width: 230px !important;
+        border: 0.75px solid rgb(170, 168, 168);
+        height: 25px !important;
+        padding-left: 8px !important;
+    }
+    .responds div {
+        margin: 10px !important;
+    }
+    .responds div.form-caption.invalid .form-note{
+        font-size: 8px;
+    }
+    /*-------------------End Contact-----------------*/
+
+    
+
+
+
+    /*-------------------Home & Products------------------------*/
+    ul.menu > li > a {
+        font-size: 15px !important;
+    }
+    ul.menu {
+        height: 25px;
+    }
+    #toggle {
+        font-size: 15px ;
+    }
+    .slider {
+        height: 270px;
+    }
+    .carousel-caption h1{
+		font-size: 1.5rem;
+	}
+	.carousel-caption h3.demo {
+        font-size: 12px !important;
+        letter-spacing: 0.5px;
+    }
+    .carousel-caption {
+        padding-top: 0px !important;
+    }
+	.carousel-caption .btn{		
+		font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;		
+	}
+    .new > h3 {
+        font-size: 15px !important;
+        margin: 5px 0 !important;
+    }
+    .title > h3 {
+        font-size: 20px !important;
+    }
+    .title > p {
+        font-size: 12px;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    .menu-product > li > a, .menu-collection > li > a{
+        font-size: 60%;
+        padding: 5px;
+    }
+    .carousel-indicators li {
+        width: 25px;
+        height: 1px;
+        bottom: 5px;
+    }
+    dl, ol, ul {
+        margin-bottom: 0px;
+    }
+    .login-register input {
+        padding: 5px !important;
+    }
+    /*-------------------End Home & Products------------------------*/
+    
+
+
+
+
+    /*--------------Footer------------*/
+    .end p {
+        font-size: 40%;
+    }
+    .end hr {
+        width: 25%;
+        border-top: 0.75px solid black;
+    }
+    .text-footer {
+        font-size: 15px;
+        letter-spacing: 0.25px;
+    }
+    .social > a  {
+        font-size: 1.25rem;
+        padding: 0.75rem;
+    }
+    div.item-footer > div {
+        font-size: 35%;
+    }
+    div.item-footer  p {
+        margin-bottom: 5px;
+    }
+    .title-footer {
+        font-size: 0.55rem;
+        margin: 7px 0;
+    }
+    .hr-footer {
+        width: 75%;
+        margin: revert;
+    }
+    div.copy h5{
+        font-size: 50%;
+    }
+    /*--------------End Footer------------*/
+    
+
+
+
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    .vestonvux img {
+        width: 40%;
+    }
+    /*-----------------Search box---------------*/
+    .search-box input {
+        font-size: 10px !important;
+        width: 150px !important;
+        height: 1rem !important;
+    }
+    .search:hover {
+        border-bottom: 1.25px solid rgb(221, 29, 29) !important;
+    }
+    .search-icon {
+        font-size: 10px;
+    }
+
+
+
+    /*--------------Header top bar---------------*/
+    .header-topbar > li > a {
+        font-size: 8px !important;
+        padding: 5px 10px !important;
+    }
+
+
+
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 150px;
+    }
+    .submit:hover {
+        border: 0.75px solid black;
+    }
+    .text-newletter{
+        font-size: 8px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .content-newletter {
+        font-size: 7px;
+        letter-spacing: 0.25px;
+        margin-bottom: 7px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 150px;
+    }
+    div.header > p {
+        font-size: 20px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 15px;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 8px;
+    }
+    p > iframe {
+        height: 200px;
+    }
+    input.button {
+        font-size: 8px;
+        width: 170px !important;
+        height: 20px;
+        border: 1px solid black !important;
+    }
+    .responds div.form-caption > input.form-text-caption:not(:last-child) {
+        width: 170px !important;
+        font-size: 7px;
+        border-bottom: 1px solid rgb(170, 168, 168) !important;
+        border-radius: 0 0 0 5px !important;
+        height: 20px;
+    }
+    .responds div {
+        margin: 5px !important;
+    }
+    .responds div.form-caption.invalid .form-note {
+        font-size: 7px;
+    }
+    /*-------------------End Contact-----------------*/
+    
+    /*-------------------Home------------------------*/
+    ul.menu > li > a {
+        font-size: 12px !important;
+        letter-spacing: 0.5px;
+    }
+    ul.menu {
+        height: 20px;
+    }
+    .slider {
+        height: 200px;
+    }
+    .carousel-inner p {
+        font-size: 5px;
+    }
+    .item-text pre {
+        padding: 0px;
+        font-size: 5px;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 13px;
+        padding-top: 5px;
+        margin: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.3rem;
+        margin: 0;
+    }
+    div.item-footer > div {
+        font-size: 25%;
+    }
+    div.item-footer  p {
+        margin-bottom: 5px;
+    }
+    .title-footer {
+        font-size: 0.45rem;
+        margin: 7px 0;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+    .content-collection {
+        top: 30%;
+    }
+    .content-collection h4 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .content-collection a {
+        font-size: 10px;
+        letter-spacing: 2px;
+        line-height: 0px;
+    }
+    .holiday-wedding input {
+        padding: 10px;
+        width: 80px;
+        font-size: 8px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 0.5px solid black;
+    }
+    .login-register input {
+        padding: 10px;
+        width: 100px !important;
+        font-size: 10px;
+        border: 0.5px solid white;
+    }
+    .title > h3 {
+        font-size: 15px !important;
+    }
+    .title > p {
+        font-size: 8px !important;
+    }
+}
+@media screen and (max-width: 360px) /*500%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar > li > a {
+        font-size: 6px !important;
+        padding: 4px 8px!important;
+    }
+
+
+
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 130px;
+        font-size: 8px;
+        height: 1.25rem;
+    }
+    .submit:hover {
+        border: 0.75px solid black;
+    }
+    .text-newletter{
+        font-size: 8px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .content-newletter {
+        font-size: 5px;
+        letter-spacing: 0.25px;
+        margin-bottom: 5px;
+    }
+    .form-content span {
+        font-size: 7px;
+
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 100px;
+    }
+    div.header > p {
+        font-size: 20px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 10px;
+        padding: 5px 0 0 5px;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 5px;
+        line-height: 5px;
+    }
+    
+    input.button {
+        width: 130px !important;
+    }
+    .responds div.form-caption > input.form-text-caption:not(:last-child) {
+        width: 130px !important;
+        border: 0.55px solid black;
+        height: 15px;
+    }
+    .responds div {
+        margin: 0px !important;
+    }
+
+    /*-------------------End Contact-----------------*/
+
+    /*-------------------Home------------------------*/
+    .slider {
+        height: 170px;
+    }
+    .carousel-caption h1{
+		font-size: 1rem;
+	}
+	.carousel-caption h3.demo{		
+		font-size: 5px;	
+        letter-spacing: 0.5px;
+        margin-bottom: 0;	
+	}
+	.carousel-caption .btn{		
+		font-size: 5px;	
+        padding: 3px 6px;
+        border: 0.5px solid white;	
+        border-radius: 3.5px;
+	}
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 10px;
+        padding-top: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.2rem;
+    }
+    .carousel-inner p, .item-text pre {
+        font-size: 5px;
+    }
+    .content-collection h4 {
+        font-size: 10px;
+    }
+    .content-collection a {
+        font-size: 8px;
+    }
+    .holiday-wedding input {
+        width: 65px;
+    }
+    .login-register input {
+        font-size: 8px;
+        width: 70px !important;
+        padding: 5px;
+    }
+/*-------------------End Home------------------------*/
+
+    
+    .hr-end {
+        margin: revert;
+    }
+}
+/*-----------------------------------------------------END MEDIA QUERY-------------------------------------------------*/

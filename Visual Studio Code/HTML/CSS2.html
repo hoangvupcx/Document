@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         p.overflow { Chỉ dùng cho dạng block và có chiều cao xác định
+            width: 300px;
+            height: 100px;
+            background-color: azure;
+            overflow: auto; Tạo 1 thanh trượt cho phần nội dung thừa ra khỏi height: auto/hidden/scroll/visible
+        } 
+
+        div > img {
+            float: left ; /* Những thành phần bên dưới tràn lên phần còn dư của nội dung */
+        }
+
+        h1 {
+            clear: left; /* Chỉ cho những nội dụng mình muốn tràn lên */
+        }
+
+        div.float {
+            background-color: blue;
+            overflow: auto; /* Phần nên blue được phủ hết img (Làm trên thành phần cha). Kĩ thuật clear-fix */
+        }
+
+        .position {
+            width: 100px;
+            background-color: black;
+            padding: 10px;
+            right: 10px;
+            bottom: 10px;
+            position: fixed; /* Thay đổi dựa trên top|right|bottom|left */
+        }
+
+        div.position > a {
+            color: red;
+        }
+        p > img {
+            position: absolute;
+            top: 80px;
+            z-index: -1; /* Nằm dưới thành phần khác. Chỉ có hiệu lực khi position là absolue|relative|fixed  */
+        }
+
+        .display > a{
+            background-color:blue;
+            color: white; 
+            display: block; /* Chỉ cần rê chuột lên vùng padding thì sẽ hiển thị */
+            padding: 10px;
+            width: 100px;
+        }
+
+        div.inlineblock > div {
+            background-color: greenyellow;
+            width: 24%;
+            height: 120px;
+            border: 2px dashed blue;
+            display: inline-block;
+        }
+
+        /* div:nth-child(3) {
+            visibility: hidden; Ẩn và các thành phần khác không chen vào
+            opacity: 0; Giá trị từ 0 -> 1. Ẩn và mờ từ từ, các thành phần khác không chen vào 
+            display: none; Ẩn và các thành phần khác chen vào 
+        } */
+
+        div.flexbox {
+            background-color: orange;
+            height: 600px;
+            display: flex; /* Tự động canh chỉnh kích thước của các flex-list */
+            flex-wrap: wrap; /* Tự động xuống dòng khi các flex-list vượt quá width */
+            flex-direction: row ; /* Chỉ hướng đi của nội dung */
+            justify-content: left; /* Tự canh lề cho nôi dung */
+            align-items: center; /* Tự canh từng khối block */
+            align-content: center; /* Tự canh tất cả các khối block */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inlineblock flexbox">
+        <div>ABC</div>
+        <div style="height: 200px ;">ABC</div>
+        <div style="height: 220px ;">Hidden</div>
+        <div>ABC</div>
+        <div style="height: 250px ;">ABC</div>
+        <div>ABC</div>
+    </div>
+    <div class="display">
+        <a href="#">HOME</a>
+    </div>
+    <div class="position">
+        <a href="#">GO TO TOP</a>
+    </div>
+    <p>
+        <img src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg" alt="" width="120px">
+    </p>
+    <h1>TEST 1</h1>
+    <h1>TEST 1</h1>
+    <div class="float">
+        <img class="float" src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg" alt="" width="120px">
+        <p class="overflow float">Đề xuất trên được nêu tại Hội nghị sơ kết trực tuyến về việc triển khai cách ly y tế tại nhà cho F1 trên địa bàn, ngày 3/8, theo Trung tâm Kiểm soát Bệnh tật Thành phố (HCDC). Bác sĩ Nguyễn Hữu Hưng, Phó giám đốc Sở Y tế cho biết, TP HCM triển khai cách ly y tế tại nhà cho F1 trong giai đoạn hiện nay là biện pháp cấp bách, đòi hỏi sự chung sức của tất cả lực lượng chức năng và người cách ly.</p>
+    </div>
+    <h1>TEST 1</h1>
+</body>
+</html>

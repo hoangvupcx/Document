@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Questrial, sans-serif;
+}
+.menu-collection {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 0px !important;
+}
+.menu-collection a {
+    color: #666;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: all 1s;
+    display: block;
+}
+.menu-collection a:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+.collection-items {
+    background-color: #f3f3f3;
+}
+.collection-items > .collection-item-1  img {
+    width: 100%;
+}
+.collection-item-1 {
+    position: relative;
+}
+div.text-item-1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 5%;
+    width: 100%;
+    padding: 0 10% 0;
+}
+.text-item-1 h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+.text-item-1 p {
+    font-size: 25px;
+}
+
+.collection-item-2 img {
+    width: 60%;
+}
+.collection-item-2 {
+    display: flex;
+    padding: 30px 0 0 0;
+    align-items: center;
+}
+
+.text-item-2 {
+    display: block;
+    text-align: center;
+    padding: 0 5%;
+    width: 40%;
+}
+.text-item-2 h1 {
+    font-size: 35px;
+}
+.text-item-2 p {
+    font-size: 20px;
+    margin: 0;
+}
+.collection-1, .collection-2 {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.collection-1 img, .collection-2 img {
+    width: 50%;
+}
+.collection-1 > div, .collection-2 > div  {
+    color: white;
+    text-align: center;
+    padding: auto 10%;
+}
+.collection-1 > div > div,  .collection-2 > div > div{
+    padding: 0 5%;
+}
+.collection-1 > div h1, .collection-2 > div h1 {
+    letter-spacing: 5px;
+}
+.collection-1 > div p, .collection-2 > div p {
+    font-size: 20px;
+}
+.button-holiday input, 
+.button-collection input,
+.button-anniversary input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid white;
+    transition: all 0.75s;
+    border-radius: 5px;
+    color: white;
+}
+.button-collection input {
+    margin-left: 0px !important;
+}
+.button-holiday input, .button-anniversary input {
+    position: absolute;
+}
+.button-anniversary input {
+    top: 50%;
+}
+.button-anniversary input {
+    
+}
+.button-holiday input:hover,
+.button-collection input:hover,
+.button-anniversary input:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    transform: scale(1.1);
+}
+.show-anniversary {
+    position: relative;
+}
+.show-anniversary img {
+    width: 100%;
+}
+.caption-show-anniversary-1st, .caption-show-anniversary-2nd {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.caption-show-anniversary-1st {
+    top: 30%;
+}
+.show-anniversary h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: -4px;
+}
+.show-anniversary h3 {
+    font-size: 40px;    
+}
+.caption-show-anniversary-2nd {
+    top: 60%;
+}
+.spacer {
+    margin-top: 75px;
+}
+
+
+/*---------------Wedding---------------*/
+.banner-wedding {
+    position: relative;
+}
+.banner-wedding img {
+    width: 100%;
+}
+.caption-wedding, .text-wedding {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.caption-wedding {
+    top: 10%;
+    color: white;
+}
+.text-wedding {
+    top: 80%;
+    color: white;
+}
+.caption-wedding h1 {
+    font-size: 100px;
+    margin: -10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px black;
+}
+.caption-wedding h2 {
+    font-size: 60px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: -5px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h3 {
+    text-shadow: 1px 1px 1px white;
+}
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.title > h3 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+
+
+
+/*-----------------Holiday------------------*/
+.banner-holiday {
+    position: relative;
+}
+.banner-holiday img {
+    width: 100%;
+    position: relative;
+}
+.container-holiday {
+    position: absolute;
+    width: 40%;
+    bottom: 25%;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 1px 1px 1px black;
+}
+.caption-holiday h2 {
+    font-size: 50px;
+}
+.text-holiday p {
+    font-size: 18px;
+}
+.title {
+    width: 80%;
+    margin:  auto ;
+}
+
+
+
+/*-------------Anniversary--------------*/
+.anniversary {
+    position: relative;
+}
+.anniversary img {
+    width: 100%;
+    margin-top: 5px;
+}
+/*.text-anniversary {
+    position: absolute;
+    top: 40%;
+    color: white;
+    width: 50%;
+    margin-left: 5%;
+}
+.text-anniversary h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.text-anniversary p {
+    font-size: 20px;
+}*/
+
+
+
+
+/*----------------------New season-------------------------*/
+.new-season {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.text-new-season {
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+    width: 100%;
+}
+.text-new-season h1 {
+    margin: 0;
+    text-shadow: 2px 2px 5px white;
+}
+
+
+.text-new-season-products {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    width: 100%;
+}
+.text-new-season-products h1 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px white;
+}
+.button-new-season input {
+    padding: 10px;
+    font-size: 30px;
+    width: 400px !important;
+}
+
+
+
+/*------------------------MEDIA QUERY------------------------------*/
+@media screen and (max-width: 1050px) /*150%*/  {
+    .button-holiday input {
+        width: 150px;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+    .caption-collection h1, .text-new-season h1 {
+        font-size: 30px;
+    }
+    .caption-collection p {
+        font-size: 18px !important;
+    }
+    .button-collection input {
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 10px;
+        width: 200px !important;
+    }
+    .collection-item-2 {
+        padding-top: 20px;
+    }
+    .button-holiday input {
+        width: 200px !important;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .text-new-season-products {
+        bottom: 15%;
+    }
+    .text-new-season-products h1 {
+        font-size: 35px !important;
+    }
+    .button-new-season input {
+        padding: 8px;
+        font-size: 20px;
+        width: 300px !important;
+    }
+    
+}
+
+@media screen and (max-width: 750px) /*250%*/ {
+    .caption-collection h1, .text-new-season h1 {
+        font-size: 25px;
+    }
+    .caption-collection p {
+        font-size: 15px !important;
+        margin-bottom: 0;
+    }
+    .button-holiday input {
+        width: 180px !important;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .text-new-season-products {
+        bottom: 10%;
+    }
+    .text-new-season-products h1 {
+        font-size: 30px !important;
+    }
+    .button-new-season input {
+        font-size: 15px;
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 600px) /*300%*/ {
+    .caption-collection h1, .text-new-season h1 {
+        font-size: 20px;
+        letter-spacing: 2px !important;
+    }
+    .caption-collection p {
+        font-size: 12px !important;
+    }
+    .button-collection input {
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 10px;
+        width: 150px !important;
+    }
+    .collection-item-2 {
+        padding-top: 15px;
+    }
+    .button-holiday input {
+        margin-top: 5px !important;
+        width: 150px !important;
+        padding: 7px 10px;
+        font-size: 10px;
+        border: 1px solid white;
+    }
+    .text-new-season-products {
+        bottom: 10%;
+    }
+    .text-new-season-products h1 {
+        font-size: 25px !important;
+    }
+    .button-new-season input {
+        margin-top: 10px !important;
+        padding: 5px;
+        font-size: 12px;
+        width: 180px !important;
+    }
+    
+}
+
+@media screen and (max-width: 450px) /*400%*/ {
+    .caption-collection h1, .text-new-season h1 {
+        font-size: 18px;
+    }
+    .caption-collection p {
+        font-size: 10px !important;
+    }
+    .button-collection input {
+        margin-top: 10px;
+        font-size: 10px;
+        padding: 5px 0px;
+        width: 130px !important;
+    }
+    .button-holiday input {
+        width: 130px !important;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .text-new-season input {
+        margin-top: 10px;
+    }
+    .text-new-season-products h1 {
+        font-size: 20px !important;
+    }
+    .button-new-season input {
+        padding: 5px;
+        font-size: 10px;
+        width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 360px) /*500%*/ {
+    .button-holiday input {
+        width: 100px !important;
+        padding: 3px;
+        font-size: 8px;
+    }
+}
+
+
+

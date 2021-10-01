@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>VESTON</title>
+    <link rel="stylesheet" href="web.css">
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(event) {
+                var pos_body = $('html,body').scrollTop();
+                if(pos_body>20){
+                    $('.gotop').addClass('hien-ra');
+                }
+                else{
+                    $('.gotop').removeClass('hien-ra');
+                }
+            });
+            $('.gotop').click(function(event) {
+                $('html,body').animate({scrollTop: 0},140);
+            });
+        });
+
+       /* var timeOut;
+        function scrollToTop() {
+            if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+                window.scrollBy(0, -50);
+                timeOut = setTimeout('scrollToTop()', 10)
+            }
+            else {
+                clearTimeout(timeOut);
+            }
+        } */
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="Veston.html"><i class="fas fa-home"></i> TRANG CHỦ</a>
+            </li>
+            <li><a href="#"><i class="fas fa-bahai"></i> MỚI</a></li>
+            <li><a href="#"><i class="fas fa-bahai"></i> SALE OFF</a></li>
+            <li class="sub">
+                <a href="#">SẢN PHẨM<i class="fas fa-caret-down"></i></a>
+                <ul class="menu subcontent">
+                    <li class="first"><a href="#">VESTON CƯỚI</a></li>
+                    <li><a href="#">VESTON CÔNG SỞ</a></li>
+                    <li><a href="#">GILE</a></li>
+                </ul>
+            </li>
+            <li class="right"><a href="#"><i class="fas fa-phone-square-alt"></i> LIÊN HỆ</a></li>
+            <li class="right"><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8"><i class="fas fa-directions"></i> TÌM ĐƯỜNG</a></li>
+            <li class="right"><a href=""><i class="fas fa-info-circle"></i> GIỚI THIỆU</a></li>
+            <li class="right sub">
+                <a href=""><i class="fas fa-bars"></i><i class="fas fa-caret-down"></i></a>
+                <ul class="menu-menu">
+                    <li><a href="#"><i class="fas fa-phone-square-alt"></i> LIÊN HỆ</a></li>
+                    <li><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8"><i class="fas fa-directions"></i> TÌM ĐƯỜNG</a></li>
+                    <li><a href=""><i class="fas fa-info-circle"></i> GIỚI THIỆU</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1>LIÊN HỆ</h1>
+    </div>
+    <div class="lienhe">
+        <p>LIÊN HỆ</p>
+        <p><i class="fas fa-phone-alt"></i> Hotline: (84+) 028.3920.7621 </p>
+        <p><i class="fas fa-map-marker-alt"></i> 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh</p>
+        <p><i class="fas fa-envelope"></i> info@vestongroup.com</p>
+    </div>
+    <p class="lienhe">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9284417619238!2d106.67618761480114!3d10.81678819229415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1904532b1%3A0x9851d48b0be5bdfd!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1629261149034!5m2!1svi!2s" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </p>
+    <div class="responds">
+        <form action="">
+        <ul><input type="text" placeholder="Họ và tên của bạn" size="50" required></ul>
+        <ul><input type="email" placeholder="Địa chỉ email của bạn" size="50"required></ul>
+        <ul><input type="number" placeholder="Số điện thoai của bạn" size="50"required></ul>
+        <ul><textarea name="description" cols="60" rows="15.5" placeholder="Nội dung" ></textarea></ul>
+        <ul><input type="submit" class="button" value="GỬI"></ul>
+    </form>
+    </div> 
+    <div class="gotop">
+        <a id="mybutton" href="#">
+            <i class="fas fa-chevron-up" aria-hidden="true" onclick="scrollToTop()" style="color: white;">
+            </i>
+        </a>
+    </div>
+</body>
+</html>

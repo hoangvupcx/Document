@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+.header-anniversary {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5%;
+}
+.header-anniversary h1, .the-mural h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.header-anniversary p, .the-mural p {
+    font-size: 20px;
+    text-align: center;
+}
+.the-magazine {
+    color: white;
+    position: relative;
+}
+.the-magazine img {
+    width: 100%;
+}
+.text-the-magazine {
+    width: 35%;
+    top: 10%;
+    position: absolute;
+    margin-left: 5%;
+    text-align: justify;
+}
+.text-the-magazine h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.text-the-magazine p {
+    font-size: 20px;
+}
+.the-mural {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.the-mural img {
+    width: 100%;
+}
+.text-the-mural {
+    margin: 5% 0;
+}
+.text-the-mural p {
+    font-size: 20px;
+}

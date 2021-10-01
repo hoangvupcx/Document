@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css"> 
+    <title>VestonVux | Collections</title>
+    <link rel="stylesheet" href="./Css/Products.css">
+    <link rel="stylesheet" href="./Css/Home.css">    
+    <link rel="shortcut icon" href="./images/images/LOGO VESTONVUX-04.png">
+    <link rel="stylesheet" href="./Css/Collection.css">
+    <script src="./Js/JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .menu li:nth-child(5) > a {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!-----------------Navigation---------------->
+    
+    <nav>
+        <ul class="header-topbar">
+            <li >
+                <a href="./index.html">
+                    VESTONVUX.COM
+                </a>
+            </li>
+            <li>
+                <a href="./Login.html">MY ACCOUNT</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/maps/dir/10.870013,106.6173419/371+Nguy%E1%BB%85n+Ki%E1%BB%87m,+Ph%C6%B0%E1%BB%9Dng+3,+G%C3%B2+V%E1%BA%A5p,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8453975,106.6084666,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x317528e1fa99872d:0x6a2ca231c09e5a01!2m2!1d106.676983!2d10.8172801">STORE LOCATION</a>
+            </li>
+            <li>
+                <a>
+                    <i class="fas fa-search search-toggle"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="fas fa-shopping-bag login-and-register"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="search-box">
+        <div class="search">
+            <i style="margin: 0 10px" class="fas fa-search search-icon" id="btnSearch" data-toggle="modal" data-target="#myModal"></i>
+            <input type="text" id="kw" placeholder="Search...">
+            <span class="clear" onclick="document.getElementById('kw').value = ''"></span>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Search Results </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Your Search in this box will be shown by the Dark-Gray color
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <div class="login-register">
+        <a href="./Login.html"><input type="button" value="Login"></a>
+        <a href="./Register.html"><input type="button" value="Register"></a>
+    </div>
+
+
+    <div class="vestonvux">
+        <a href="./Anniversary.html"><img src="./images/images/LOGO VESTONVUX-02.png" alt=""></a>
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="./index.html">HOME</a>
+            </li>
+            <li><a href="./New.html">NEW</a></li>
+            <li><a href="./Sale.html">SALE</a></li>
+            <li><a href="./Products.html">PRODUCTS</a></li>
+            <li><a href="./Collections.html">COLLECTIONS</a></li>
+            <li class="right"><a href="./Contact.html">CONTACT</a></li>
+            <li class="right"><a href="./About.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <ul class="menu-collection">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Collections.html" style="text-decoration: underline; color: black !important;">Collections</a></li>
+        <li><a href="./Holiday.html">Holiday</a></li>
+        <li><a href="./Wedding.html">Wedding</a></li>
+    </ul>
+    
+    <div class="collection-items">
+        <div class="collection-item-1 wow animate__fadeInRight">
+            <img src="./images/images/2. wedding and holidays.jpg" alt="" style="width: 100%;">
+            <!-- <a href="./Wedding.html"><img src="https://armanisilos-dunebuggysrl.netdna-ssl.com/wp-content/uploads/2019/03/03_Armani_Silos_First_Floor_Androgynous-1.jpg" alt=""></a> 
+            <div class="text-item-1">
+                <h1>Wedding & Holiday Suits for Men</h1>
+                <p>With more options, many types, and each suit piece sold separately, looking your best is easier than ever in our wedding suits for men.</p>
+            </div>-->
+        </div>
+        <div class="collection-item-2">
+            <img class="wow animate__fadeInLeft" src="https://images.pexels.com/photos/7518686/pexels-photo-7518686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="text-item-2 caption-item-2 wow animate__fadeInRight">
+                <h2>The Wedding '21</h2>
+                <p>
+                    The result of skilled artistry, VestonVux Made to Measure tailoring combines the refinement of VestonVux aesthetics with the richness of tailor-made craftsmanship. The service is designed for a gentle-mannered yet determined man for whom elegance is an attitude, a contemporary way of presenting himself.
+                </p>
+            </div>
+        </div>
+        <div class="collection-item-2">
+            <div class="text-item-2 caption-item-2 wow animate__fadeInLeft">
+                <h2>Autumn/Winter '21</h2>
+                <p>
+                    The autumn/winter '21 collection presents a series of Paul Smith classics that have been remixed and reinvented for 2021. Tartan tailoring, vintage shirts and mohair knits along with paisley, striped and floral prints taken from the VestonVux Archive, feature throughout.
+                </p>
+            </div>
+            <img class="wow animate__fadeInRight" src="https://images.pexels.com/photos/5721002/pexels-photo-5721002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+    </div>
+    
+
+    <div class="banner-collection">
+        <div class="collection-1">
+            <img class="wow animate__fadeInLeft" src="https://www.armani.com/content/images/cms/ycm/resource/blob/451974/613bfaa5566d6d705d8fa404f8efafd9/ea-m-backtowork-data.jpg/w768.jpg" alt="">
+            <div>
+                <div class="caption-collection wow animate__fadeInRight">
+                    <h1>SMART DAYWEAR</h1>
+                    <p>The combination of formal and informal reflects the attitude of a casually elegant modern wardrobe.</p>
+                    <div class="button-collection">
+                        <a href="./Holiday.html"><input type="button" value="Holiday Collection" style="margin-top: 20px; width: 250px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-2">
+            <div>
+                <div class="caption-collection wow animate__fadeInLeft">
+                    <h1>MODERN STYLELIFE</h1>
+                    <p>Tailoring designed to be versatile and adaptable
+                        for a new way of living and working.</p>
+                    <div class="button-collection">
+                        <a href="./Wedding.html"><input type="button" value="Wedding Collection" style="margin-top: 20px; width: 250px;"></a>
+                    </div>
+                </div>
+            </div>
+            <img class="wow animate__fadeInRight" src="https://images.pexels.com/photos/3650469/pexels-photo-3650469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="new-season">
+        <video loop="" autoplay="" muted="" playsinline="" style="width: 100%;" class="wow animate__fadeInUp">
+            <source src="https://www.zegna.com/media/whatmakesaman-fw21/zegna-fw-21-what-makes-a-man-looks_desktop.mp4" type="video/mp4">
+        </video>
+        <div class="text-new-season wow animate__fadeInDown">
+            <h1>NEW SEASON ARRIVALS</h1>
+            <div class="button-collection">
+                <input type="button" value="COMING SOON" style="margin-top: 20px; width: 250px;">
+            </div>
+        </div>
+    </div>
+   
+    
+
+    
+
+    <!----------------Scroll Top--------------->
+    <div class="gotop">
+        <a id="mybutton" href="#">
+            <i class="fas fa-chevron-up" onclick="scrollToTop()" style="color: white;">
+            </i>
+        </a>
+    </div>
+
+    <!----------------Footer--------------->
+    <div class="abc">	
+        <div>
+            <div>
+                <h2 class="text-footer">CONTACT US</h2>
+            </div>
+            <div class="social">
+                <a href="https://vi-vn.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                <a href="https://ads.google.com/intl/vi_vn/getstarted/?subid=vn-vi-ha-awa-bk-c-l00!o3~Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB~123593086017~kwd-21283811~13984401112~538552239800&gclsrc=aw.ds&gclid=Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+             </div>
+        </div>
+    </div>
+    <footer class="footer abc">
+        <div class="row item-footer">
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">NEED HELP?</h5>
+                <hr class="hr-footer">
+				<p>(028) 3920.7621</p>
+				<p>info@vestonvux.com</p>
+				<p>371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">WORKING HOURS</h5>
+                <hr class="hr-footer">
+                <p>Monday-Friday: 8:00 - 20:00</p>
+				<p>Weekend: 8:00 - 17:00</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+				<h5 class="title-footer">BECOME A MEMBER</h5>
+				<hr class="hr-footer">
+                <p>Join now and get 10% off your second purchase, and free returns on all online purchases!</p>
+            </div>
+        </div>
+        <div class="copy">
+            <hr class="hr-end">
+                <h5> Copyright &copy; VESTONVUX</h5>
+        </div>
+    </footer>
+</body>
+</html>

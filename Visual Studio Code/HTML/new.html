@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201208/pngtree-checkered-blue-simple-background-image_505269.jpg);
+            background-repeat: no-repeat;
+            /*background: color image repeat attachment position*/
+            background: radial-gradient(red, orange, yellow);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p.test{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p.t{
+            text-transform: uppercase;
+            text-decoration: line-through;
+            direction: rtl;
+
+        }
+        .a{
+            letter-spacing:unset; /*Khoảng cách của 2 từ*/
+            line-height:unset;
+            text-indent: 50px; /*Khoảng cách dầu dòng*/
+            text-shadow: 2px 3px 3px violet; /*(ngang - dọc - bóng mờ)*/
+            width: 300px;
+            background-color:white;
+            white-space: nowrap; /*Ngắt dòng dựa trên width*/
+            text-overflow: ellipsis; /*Tạo dấu 3 chấm để ẩn phần dư*/
+            overflow: hidden; /*Ẩn phần dư của white-space*/
+        }
+        .b{
+            width: 400px;
+            background-color: white;
+            padding: 50px 30px;
+            border-style: solid;
+            border-bottom-style: dashed;
+            border-right-color: whitesmoke;
+            border: 10px solid black;
+            border-radius: 20px 0px 50px 0px; /* bo tròn border*/
+            box-shadow: 3px 5px green; /* bóng */
+            outline: 20px solid honeydew;
+            margin: 0px auto; /* Căn giữa cho block (căn trái-phải = auto)*/
+        }
+        ul{
+            list-style-type: decimal;
+            list-style-position: inside; /* Đưa ssoos vào khung background*/
+
+        }
+        li{
+            background-color: blue;
+        }
+        table.mytable{
+            border-collapse: collapse; 
+        }
+        table.mytable tr:hover { /* rê chuột tới đâu, sáng tới đó */
+            background-color: white;
+            color: red; 
+        }
+        table.mytable tr:nth-child(even){ /*dòng chẵn sáng*/
+            background-color: yellow;
+            color: black;
+        }
+
+        table.mytable tr:nth-child(even){ /*dòng lẻ sáng*/
+            background-color: red;
+            color: white;
+        }
+        table.mytable tr:first-child{ 
+            text-align: center;
+            font-weight: bold;
+            background-color: pink;
+        }
+        table.mytable tr:last-child{
+            text-align: right
+            font-weight:end;
+            background-color: brown;
+            
+        }
+        table.mytable tr:nth-child(3){ /*dòng thứ 3*/
+            background-color: blue;
+            color: white;
+        }
+        /*div ~ p { ~: anh em; +: anh em gần nhất; khoảng trắng: con cháu; >: con; dấu phẩy" Lấy cả 2
+            color: red;
+        }*/
+        /*.test{
+            color: gold;
+        }
+        input[type=button] {
+            background-color: lightsalmon;
+            color: white;
+        }
+        #subject{
+            font-size: 60px;
+        }
+        .test.demo{
+            color: green;
+        }*/
+        
+        a:link{
+            color: green; /*Chưa click*/
+        }
+        a:visited{
+            color: black; /*Đã click*/
+        }
+        a:hover{
+            color: red; /*Rê chuột tới thì sáng*/
+        }
+        a:active{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="http://www.google.com.vn">GOOGLE.COM.VN</a>
+    </h1>
+    <section>
+        <table class="mytable" border="1" width="100% ">
+            <tr style="cellspacing=""">
+                <td>b</td>
+                <td>b</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </table>
+        <ul>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+        </ul>
+        <p class="t">hello world</p>
+        <h1 class="test demo" id="subject">TEST 1</h1>
+        <div>
+            <p class="test">TEST 2</p>
+            <p>TEST 3</p>
+            <ul>
+                <li>A</li>
+                <li>
+                    <p>ABC</p>
+                </li>
+            </ul>
+        </div>
+        <p class="test">TEST 3</p>
+        <p>TEST 4</p>
+        <p class="test">TEST 5</p>
+        <input type="button" value="BUTTON">
+        <p class="a">Giới chức trong những tuần gần đây nhấn mạnh Singapore nên bắt đầu suy nghĩ về việc coi Covid-19 là bệnh dịch thông thường sau khi chương trình tiêm chủng đạt đến ngưỡng quan trọng. Dù công bố biện pháp mới, giới chức Singapore khẳng định họ sẽ bám sát kế hoạch sống chung với virus, dù họ mô tả đợt bùng phát là "bước lùi lớn".</p>
+        <p class="b">Giới chức trong những tuần gần đây nhấn mạnh Singapore nên bắt đầu suy nghĩ về việc coi Covid-19 là bệnh dịch thông thường sau khi chương trình tiêm chủng đạt đến ngưỡng quan trọng. Dù công bố biện pháp mới, giới chức Singapore khẳng định họ sẽ bám sát kế hoạch sống chung với virus, dù họ mô tả đợt bùng phát là "bước lùi lớn".</p>
+    </section>
+</body>
+</html>

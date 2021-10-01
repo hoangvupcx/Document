@@ -1,0 +1,293 @@
+body {
+    background-color: black !important;
+}
+.header-anniversary {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5%;
+}
+.header-anniversary h1, .the-mural h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px white;
+}
+.header-anniversary p, .the-mural p {
+    font-size: 20px;
+    text-align: center;
+}
+.the-magazine {
+    color: white;
+    position: relative;
+}
+.the-magazine img {
+    width: 100%;
+}
+.text-the-magazine {
+    width: 35%;
+    top: 5%;
+    position: absolute;
+    margin-left: 5%;
+    text-align: justify;
+    z-index: 1000;
+}
+.text-the-magazine h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px white;
+}
+.text-the-magazine p {
+    font-size: 20px;
+}
+.the-mural {
+    color: white;
+    text-align: center;
+}
+.the-mural img {
+    width: 100%;
+}
+.text-the-mural {
+    margin: 4.5%;
+    padding: 10px;
+}
+.text-the-mural p {
+    font-size: 20px;
+}
+.show-anniversary {
+    position: relative;
+    text-align: center;
+}
+.text-the-show-anniversary {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+.the-earth {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.the-earth > img {
+    width: 50%;
+}
+.text-the-earth {
+    padding: 0 2vw 0 10vw;
+    width: 50%;
+}
+.text-the-earth img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.text-the-earth p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1050px) /*150%*/ {
+    .header-anniversary h1, .text-the-magazine h1, .the-mural h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .header-anniversary h2 {
+        font-size: 25px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 18px;
+    }
+    .text-the-magazine p {
+        font-size: 15px;
+    }
+    .text-the-magazine h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .text-the-show-anniversary {
+        bottom: 7%;
+    }
+    .text-the-earth img {
+        margin-bottom: 40px;
+    }
+    .text-the-earth p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) /*200%*/ {
+    .header-anniversary h1, .the-mural h1 {
+        font-size: 35px;
+    }
+    .header-anniversary h2 {
+        font-size: 22px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 15px;
+    }
+    .text-the-magazine p {
+        font-size: 12px;
+    }
+    .text-the-magazine h1 {
+        font-size: 30px;
+    }
+    .text-the-magazine h4 {
+        font-size: 17px;
+    }
+    .text-the-earth {
+        padding: 7%;
+    }
+    .text-the-earth img {
+        margin-bottom: 30px;
+    }
+    .text-the-earth p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) /*250%*/ {
+    .header-anniversary h1, .the-mural h1 {
+        font-size: 30px;
+    }
+    .header-anniversary h2 {
+        font-size: 20px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 12px;
+    }
+    .text-the-magazine p {
+        font-size: 10px;
+    }
+    .text-the-magazine h1 {
+        font-size: 25px;
+    }
+    .text-the-magazine h4 {
+        font-size: 15px;
+    }
+    .text-the-earth {
+        padding: 5%;
+    }
+    .text-the-earth img {
+        margin-bottom: 20px;
+    }
+    .text-the-earth p {
+        line-height: 15px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) /*300%*/ {
+    .header-anniversary h1, .the-mural h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .header-anniversary h2 {
+        font-size: 18px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 10px;
+    }
+    .magazine-none {
+        display: none;
+    }
+    .text-the-magazine {
+        top: 15%;
+    }
+    .text-the-magazine p {
+        font-size: 9px;
+    }
+    .text-the-magazine h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .text-the-magazine h4 {
+        font-size: 10px;
+    }
+    .text-the-show-anniversary {
+        bottom: 5%;
+    }
+    .text-the-earth {
+        padding: 4%;
+    }
+    .text-the-earth img {
+        margin-bottom: 20px;
+    }
+    .text-the-earth p {
+        line-height: 15px;
+        font-size: 10px;
+    }   
+}
+
+@media screen and (max-width: 450px) /*400%*/ {
+    .header-anniversary h1, .the-mural h1 {
+        font-size: 25px;
+    }
+    .header-anniversary h2 {
+        font-size: 18px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 8px;
+    }
+    .text-the-magazine p {
+        font-size: 7px;
+    }
+    .text-the-magazine h1 {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .text-the-magazine h4 {
+        font-size: 8px;
+    }
+    .button-collection input {
+        font-size: 8px !important;
+    }
+    .text-the-show-anniversary {
+        bottom: 3%;
+    }
+    .text-the-show-anniversary input {
+        padding: 5px !important ;
+        border: 0.5px solid white !important;
+    }
+    .text-the-earth {
+        padding: 3%;
+    }
+    .text-the-earth img {
+        margin-bottom: 10px;
+    }
+    .text-the-earth p {
+        line-height: 12px;
+        font-size: 8px;
+    }   
+}
+
+@media screen and (max-width: 360px) /*500%*/ {
+    .header-anniversary h1, .the-mural h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .header-anniversary h2 {
+        font-size: 15px;
+    }
+    .header-anniversary p, .the-mural p {
+        font-size: 8px;
+        margin-bottom: 8px;
+    }
+    .text-the-magazine p {
+        font-size: 5px;
+    }
+    .text-the-magazine h1 {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .text-the-magazine h4, .button-collection input {
+        font-size: 8px !important;
+    }
+    .text-the-earth {
+        padding: 5%;
+    }
+    .text-the-earth p {
+        line-height: 10px;
+        font-size: 8px;
+    }   
+}

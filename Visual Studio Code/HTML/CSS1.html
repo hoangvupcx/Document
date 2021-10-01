@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p, h1 { Lấy chính nó
+            color: red;
+        }
+
+        div h2 { Lấy h2 bên trong div
+            color: gold;
+        }
+
+        div > p { Lấy p là trực tiếp của div
+            color: orange;
+        }
+
+        div + p { Lấy p cùng cấp đằng sau div
+            color: red;
+        }
+
+        div ~ p { Lấy tất cả p là anh em của div
+            color: brown;
+        }
+
+        .test { Lấy những thẻ có class="test"
+            color: green;
+        }
+        
+        p.test { Lấy những thẻ p có class="test"
+            color: blue;
+        }
+
+        section .test { Lấy những thẻ có class="test" bên trong section
+            color: pink;
+        } 
+
+        section > .test { Lấy tất cả các thẻ có class="test" là con trực tiếp của section
+            color: pink;
+        } 
+
+        [type=button] { Lấy tất cả các thẻ có type=button
+            background-color: black;
+            color: white;
+        }
+
+        #subject { Lấy tất cả các thẻ có id="subject"
+            font-size: 60px;
+        } 
+
+        .test.demo {
+            color:teal;
+            font-variant: small-caps;
+        }*/ 
+
+        body {  
+            background: url(https://vcdn-vnexpress.vnecdn.net/2018/11/06/hoc-tieng-Anh-6077-1541477390.png) no-repeat 100px 200px; /* background: color|image|repeat|attachment|position */
+            /* background: linear-gradient(to right bottom, red, green, blue); trộn màu cho màu nền */
+            background-attachment: ; /*cố định background*/
+            font-family: 'Times New Roman', Times, serif; /* font: style|variant|weight|size|family*/
+        }
+
+        ul > .test.demo {
+            text-transform: lowercase; /*capitalize: Viết hoa chữ cái đầu | uppercase*/
+            text-decoration: line-through;
+            direction: rtl;
+        }
+        
+        .text {
+            width: 400px;
+            background-color: white;
+            letter-spacing: 7px; /* Khoảng cách giữa các chữ */
+            word-spacing: 7px; /* Khoảng cách giữa các từ */
+            line-height: 30px; /* Khoảng cách giữa các dòng */
+            text-indent: 40px; /* Thụt vào trong */
+            text-shadow: 1.5px 2px 3px black; /* Bóng của chữ (Ngang, Dọc, Độ nhòe, Màu) */
+            white-space: nowrap; /* Không xuống hàng khi văn bản dài hơn width mà chỉ hiển thị trên 1 dòng, dùng với tittle để rê chuột lên sẽ hiển thị đầy đủ văn bản */
+            text-overflow: ellipsis; /* Tạo dấu 3 chấm khi văn bản tràn ra khỏi khung width */
+            overflow: hidden; /* Vùng bị tràn ra khỏi width được ẩn đi */
+        }
+
+        .padding {
+            text-align: center; /* Canh lề */
+            background-color: blue;
+            color: white;
+            padding: 10px 10px; /* Khoảng cách giữa text và padding, chỉ nhận giá trị dương. */
+            /* padding: top|right|bottom|left */
+        }
+
+        .border.outline {
+            width: 300px
+            padding: 10px 10px;
+            text-indent: 40px;
+            border-style: solid;
+            border-bottom-style: dashed;
+            border-color: red;
+            border-width: 3px;
+            /* border: width|style|color */
+            border-radius: 30px 0px 30px; /* Bo tròn border */
+            box-shadow: 3px 3px 3px green; /* Tạo bóng cho box */
+            outline: 5px darkmagenta solid; /* Outline: width|style|color */
+        }
+
+        .margin {
+            width: 300px;
+            margin: 0 auto; /* Canh giữa của khối block*/
+            /* margin: top|right|bottom|left. Canh so với lề. Có thể nhận giá trị âm */
+        }
+
+        .list-style {
+            list-style-type: square; /* Chọn kí hiệu cho li */
+            list-style-image: url(); /* Chọn hình ảnh cho li */
+        }
+
+        table {
+            border-collapse: collapse; /* Gộp biên lại */
+        }
+
+        table tr:hover { /* Rê chuột đến đâu đổi màu đến đó */
+            background-color: blue;
+            color: white;   
+        }
+
+        table tr:nth-child(even) { /* Điều chỉnh cho dòng chẵn (even) / lẻ (odd) / con thứ (số) */
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none; /* Bỏ gạch chân của thẻ a */
+        }
+
+        a:link { /* Điều chỉnh link khi chưa truy cập */
+            color: gold;
+        }
+
+        a:visited { /* Điều chỉnh link khi đã truy cập */
+            color: red;
+        }
+
+        a:active { /* Điều chỉnh khi rê chuột tới có màu khác */
+            color: green;
+        }
+
+        a:hover { /* Rê chuột tới thì gạch chân */
+            text-decoration: underline;
+        } /* Trật tự link -> visited -> hover -> active */
+    </style>
+</head>
+<body style="background-color:yellow;">
+    <h1>
+        <a href="https://www.google.com.vn/">GOOGLE.COM.VN</a>
+    </h1>
+    <section>
+        <table border="1" width="100%">
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </table>
+        <ul class="list-style">
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+            <li>TEST 1</li>
+        </ul>
+        <h1 class="test" id="subject">TEST 1</h1>
+        <div>
+            <p>TEST 2</p>
+            <p>TEST 3</p>
+            <p>TEST 2</p>
+            <p>TEST 3</p>
+            <ul>
+                <li class="test demo">hello world</li>
+                <li>
+                    <p>123</p>
+                </li>
+            </ul>
+            <h2>XYZ</h2>
+            <p>TEST 4</p>
+        </div>
+        <p>TEST 5</p>
+        <p class="test demo" id="subject">TEST 6</p>
+        <input type="button" value="BUTTON" />
+        <p class="text" title="Người này tiết lộ bà Harris sẽ nhấn mạnh thông điệp ủng hộ tự do giao thương trên toàn Biển Đông và không quốc gia nào được xem thường quyền lợi của những nước khác.">Người này tiết lộ bà Harris sẽ nhấn mạnh thông điệp ủng hộ tự do giao thương trên toàn Biển Đông và không quốc gia nào được xem thường quyền lợi của những nước khác.</p> 
+        <p class="padding">Tổ công tác yêu cầu Võ dừng xe, kiểm tra giấy tờ, nghi vấn người này sử dụng trái phép chất ma túy nên yêu cầu về trụ sở làm việc. Tuy nhiên, khi đến trước trụ sở Công an phường 11, quận 6, Võ không vào trong mà phóng xe bỏ chạy.</p>
+        <p class="border outline">Một triệu liều thuốc điều trị Covid-19 Remdesivir được Ấn Độ cam kết cung cấp cho Việt Nam trong 30 ngày tới. Đây là kết quả làm việc tích cực của "nhóm phản ứng nhanh về thuốc và vaccine" của Đại sứ quán Việt Nam tại Ấn Độ với các công ty dược phẩm lớn như Hetero, Dr. Reddy, Cipla, Jubilant, Mylan, Zydus và Cadila... Theo đó, các doanh nghiệp này cam kết sẽ cung cấp cho Việt Nam khoảng 1 triệu liều thuốc điều trị Covid 19 Remdesivir trong vòng 30 ngày tới.</p>
+        <p class="margin">Do Covid 19 bùng phát mạnh vào cuối tháng 4, Chính phủ Ấn Độ đã ban hành lệnh cấm xuất khẩu mặt hàng này, nhưng quyết định trên được nới lỏng thành hạn chế xuất khẩu vào ngày 14/6. Do đó, để được xuất khẩu, doanh nghiệp cần hoàn thiện thủ tục tại Tổng cục Ngoại thương Ấn Độ hoặc các văn phòng đặt tại các trung tâm kinh tế lớn.</p>
+    </section>
+</body>
+</html>

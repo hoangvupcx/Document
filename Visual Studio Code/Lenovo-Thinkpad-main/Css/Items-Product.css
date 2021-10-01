@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+.Detail-product h5 {
+    font-size: 2rem;
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0px auto;
+}
+.menu-details > a,  pre {
+    color: #666;
+    padding: 15px;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 0;
+    clear: left;
+    
+}
+.menu-details > a:hover {
+    color: black;
+}
+.picture-product img {
+    width: 48%;
+    float: left;
+    margin-left: 0.7%;
+    margin-top: 0.7%;
+}
+.picture-product img:first-child, .picture-product img:nth-child(2) {
+    margin-top: 0 !important;
+}
+
+
+.Detail-product {
+    clear: left;
+}
+.row1, .row2, .row3  {
+    display: inline-block; /*float:left;*/
+    padding: 0px 35px;
+    margin: 35px 0px;
+    width: 33%;
+    height: 450px;
+    font-family: Questrial, sans-serif;
+    overflow: auto; /*Tạo thanh cuộn*/
+    background-color: white;
+    z-index: 2;
+}
+h5 {
+    font-weight: 200;
+}
+.box {
+    background-color: rgb(252, 250, 250);
+    width: 100%;
+    clear: left;
+    display: block;
+}
+.select-color, .select-size {
+    width: 48%;
+}
+.select-color > p {
+    border-right: 0.1px rgb(212, 210, 210) solid ;
+    margin-bottom: 0;
+}
+.text-product > div {
+    display: inline-block;
+}
+.picture-product {
+    width: 100%;
+}
+.accordion {
+    width: 40%;
+    margin-right: 0.7%;
+}
+.accordion-header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 25px;
+    width: 20%;
+    z-index: 0;
+}
+.accordion-items {
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+.flex-item-products {
+    display: flex;
+    width: 100%;
+}
+.shopping {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Questrial', sans-serif; 
+}
+.shopping:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+.more-information {
+    color: #666;
+    text-decoration: underline;
+}
+.more-information:hover {
+    color: black;
+}
+
+
+/*------------------Accordion----------------------*/
+.accordion1 {
+    clear: left;
+    display: none;
+}
+.first {
+    border-top: 1px solid #1a1919;
+}
+.accordion-header1 {
+    font-family: Questrial, sans-serif;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #1a1919;
+    display: flex;
+    cursor: pointer;
+}
+.accordion-header1 h3 {
+    font-size: 18px !important;
+    margin: 0;
+}
+.accordion-header1 i {
+    margin-left: auto;
+}
+.accordion-item1:last-child {
+    margin-bottom: 30px;
+}
+.accordion-item1:first-child {
+    margin-top: 30px;
+}
+.accordion-item1.active .accordion-header1 {
+    background-color: #f3f3f3;
+    border-bottom: none;
+}
+.accordion-item1.active .arrow {
+    transform: rotate(180deg);
+}
+.arrow {
+    transition: all 0.3s;
+}
+.accordion-body1 {
+    font-family: Questrial, sans-serif;
+    font-size: 15px;
+    padding: 20px 30px;
+    display: none;
+    border-bottom: 1px solid #1a1919;
+}
+
+
+
+
+
+/*---------------------New------------------- */
+.new {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 0 10%;
+}
+.new > h3 {
+    padding-top: 10px;
+    margin: 0.5rem;
+    font-size: 50px;
+}
+.collection {
+    font-size: 17px ;
+    padding-top: 0.6rem;
+}
+
+.media .carousel-inner img, .media-text-product{
+    width: 100%;
+    clear: both;
+    display: none;
+    font-size: 16px !important;
+}
+
+/*------------------Media Query----------------------*/
+
+@media screen and (max-width: 1050px) /*150%*/ {
+    div.text-product p, div.text-product pre {
+        font-size: 15px;
+    }
+    .accordion-items {
+        top: 50%;
+        right: 1%;
+    }
+    button.shopping {
+        font-size: 15px;
+        height: 40px;
+    }
+    .menu-details > a, pre {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 12px;
+        margin-bottom:  0px;
+        height: 350px;
+    }  
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .Detail-product h5 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+    div.text-product p, div.text-product pre {
+        font-size: 12px;
+    }
+    button.shopping {
+        font-size: 12px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 950px) /*175%*/  {
+    .menu-details > a, pre {
+        font-size: 12px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 10px;
+        width: 32.9%;
+        padding: 0 20px;
+        height: 300px;
+    }  
+    .Detail-product h5 {
+        font-size: 20px;
+    }
+    .accordion {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    .accordion {
+        display: none;
+    }
+    .menu-details > a, pre {
+        font-size: 15px;
+        padding: 6px;
+    }
+    .Detail-product {
+        display: none;
+    }
+    .picture-product img {
+        display: none;
+    }
+    .media .carousel-inner img, .media-text-product p {
+        display: block;
+    }
+    .media-add-to-bag {
+        font-size: 15px;
+        height: 30px;
+    }
+    .accordion1 {
+        display: block;
+    }
+    .carousel-control-prev,
+    .carousel-control-next, 
+    .add-to-bag {
+        opacity: 1 !important;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+    .menu-details > a, pre {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    .menu-details > a, pre {
+        font-size: 10px;
+        padding: 3px;
+        letter-spacing: 0.5px;
+    }
+}
+@media screen and (max-width: 360px) /*500%*/ {
+    .menu-details > a, pre {
+        font-size: 8px;
+    }
+}

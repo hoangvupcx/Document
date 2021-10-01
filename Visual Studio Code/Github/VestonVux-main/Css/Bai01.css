@@ -1,0 +1,185 @@
+*{
+    font-family: Questrial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+nav > ul.menu {
+    display: flex;
+}
+ul.menu {
+    list-style-type: none;
+    
+}
+.subcontent {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #CC3300;
+}
+.subcontent::after {
+    content: " ";
+    border-width: 15px;
+    border-color: transparent transparent #CC3300 transparent;
+    border-style: solid;
+    position: absolute;
+    top: -30px;
+    left: 45%;
+}
+.sub {
+    position: relative;
+}
+.sub:hover .subcontent {
+    display: block;
+}
+ul.menu > li {
+    width: 16.69%;
+    text-align: center;
+}
+
+nav > ul.menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: coral;
+    border-right: 1px solid black;
+    padding: 10px 0px;
+}
+
+ul.menu > li > a > span {
+    display: block;
+}
+header {
+    background: linear-gradient(orange, #CC3300);
+    margin-top: 5px;
+}
+div.header {
+    display: flex;
+    align-items: center;
+}
+div.col10 {
+    width: 10%;
+}
+div.col70 {
+    width: 70%;
+}
+div.col20 {
+    width: 20%;
+}
+div.col30 {
+    width: 33%;
+}
+.col70 h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 3px 5px black;
+}
+div.col90 {
+    width: 90%;
+}
+input{
+    padding: 8px;
+}
+input[type="text"] {
+    width: 60%;
+    color: black !important;
+}
+input[type="button"] {
+    background-color: orange;
+    border: 1px solid orange;
+}
+section.courses {
+    width: 80%;
+    margin: 5px auto;
+}
+div.item {
+    width: 25%;
+    padding: 5px;
+    position: relative;
+}
+div.item img {
+    width: 70%;
+   margin: 20px auto;
+}
+div.item h1 {background: linear-gradient(darkblue, lightblue);
+    color: white;
+    padding: 10px;
+}
+div.item  > div {
+    text-align: center;
+    background: linear-gradient(rgb(192, 126, 3), orange);
+}
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside.ads {
+    position: fixed;
+}
+aside.ads img {
+    transition: 0.5s;
+}
+aside.ads img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background: linear-gradient(orange, #CC3300);
+}
+div.my-footer {
+    display: flex;
+    padding: 15px;
+}
+div.my-footer li {
+    list-style-type: none;
+}
+div.my-footer li a {
+    text-decoration: none;
+}
+h1.subject span {
+    width: 30%;
+    background-color: darkorange;
+    display: block;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+h1.subject::after {
+    content: " ";
+    background-color: darkorange;
+    width: 100%;
+    height: 3px;
+    display: block;
+}
+div.post {
+    display: flex;
+}
+div.posts p, div.posts h3 {
+    color: darkred !important;
+}
+div.posts img {
+    width: 100%;
+}
+div.detail {
+    background: rgba(0, 0, 0, 0.6) !important;
+    text-align: left !important;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 100%;
+    left: 5px;
+    overflow: hidden;
+    padding-top: 20%;
+    padding-left: 0;
+    /* opacity: 0; */
+    transition: right 1s;
+}
+div.detail ul li {
+    list-style-type: none;
+
+}
+div.item:hover div.detail {
+    /* opacity: 1; */
+    right: 5px;
+    padding-left: 10%;
+}
